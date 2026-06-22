@@ -13,6 +13,7 @@ const NAV_LINKS = [
   { label: 'Platform',   href: '#solutions'  },
   { label: 'Industries', href: '#industries' },
   { label: 'Partners',   href: '#partners'   },
+  { label: 'Contact Now', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -75,7 +76,6 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-
         </ul>
 
         {/* Mobile hamburger */}
@@ -115,7 +115,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-
         </div>
       )}
     </nav>
