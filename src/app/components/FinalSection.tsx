@@ -106,7 +106,6 @@ export default function FinalSection() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] pointer-events-none"
           style={{ background: 'radial-gradient(circle, rgba(24,96,255,0.12) 0%, transparent 65%)' }} />
         <div className="relative z-10 max-w-[1220px] mx-auto">
-          <span className="eyebrow eyebrow-light mb-5 text-center">Building Trust</span>
           <h2 className="font-display text-white leading-[0.98] mb-6 tracking-[0.03em]"
             style={{ fontSize: 'clamp(2.6rem,5.5vw,4.8rem)' }}>
             Building Trust Where<br />

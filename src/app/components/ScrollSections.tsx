@@ -218,15 +218,12 @@ export function Section3TrustLayer() {
           </h2>
 
           <p className="text-[1.15rem] leading-[1.8] font-light relative z-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
-            From Pilot to Trusted Deployment, our platform combines <span className="text-white font-medium">assurance software</span>, <span className="text-white font-medium">testing methodology</span>, <span className="text-white font-medium">risk intelligence</span>, and <span className="text-white font-medium">lifecycle monitoring</span>.
+            From Pilot to Trusted Deployment, Autonomy Trust Labs platform helps organizations assess, validate, deploy, and monitor autonomous systems operating in the real world with integrated assurance software, testing methodology, risk intelligence, and lifecycle monitoring.
           </p>
         </div>
 
         <div className="text-center mb-24">
-          <span className="eyebrow eyebrow-light mb-4 block text-blue tracking-[0.2em] font-semibold">Trust Architecture</span>
-          <h2 className="section-title section-title-light tracking-[0.02em] font-light" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
-            Everything Connected <br /><span className="text-white font-medium">Through Trust</span>
-          </h2>
+          <span className="eyebrow eyebrow-light mb-4 block text-blue tracking-[0.2em] font-semibold" style={{ fontSize: '1.25rem' }}>Trust Architecture for Physical AI</span>
         </div>
 
         {/* Desktop Architecture Schematic View */}
