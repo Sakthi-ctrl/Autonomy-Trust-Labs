@@ -19,8 +19,8 @@ const CONTACT_TYPES = [
 ];
 
 const FOOTER_LINKS = {
-  Company:  ['About ATL','Platform','Industries','Partners'],
-  Connect:  ['Contact Us', 'LinkedIn', 'Twitter'],
+  Company: ['About ATL', 'Platform', 'Industries', 'Partners'],
+  Connect: ['Contact Us', 'LinkedIn', 'Twitter'],
 };
 
 export default function FinalSection() {
@@ -43,12 +43,12 @@ export default function FinalSection() {
       <section id="partners" className="relative z-10 py-32 px-10"
         style={{ background: '#F8FAFC' }}>
         <div className="max-w-[1220px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
+
           {/* Left: Copy & CTA */}
           <div className="lg:col-span-5">
             <span className="eyebrow mb-4 block tracking-[0.2em] font-semibold" style={{ color: '#1860FF' }}>PARTNERS</span>
-            <h2 className="font-display leading-[1.05] mb-6 tracking-[0.02em]" 
-                style={{ color: '#06101F', fontSize: 'clamp(2.5rem,4.5vw,3.6rem)' }}>
+            <h2 className="font-display leading-[1.05] mb-6 tracking-[0.02em]"
+              style={{ color: '#06101F', fontSize: 'clamp(2.5rem,4.5vw,3.6rem)' }}>
               Building trusted autonomy with the right partners.
             </h2>
             <p className="text-[1.05rem] leading-relaxed mb-10" style={{ color: '#475569' }}>
@@ -75,7 +75,7 @@ export default function FinalSection() {
           {/* Right: Partner Types Grid */}
           <div className="lg:col-span-7">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {['Telecom Operators','Universities & Labs','OEMs','System Integrators','Enterprises','Governments','Testing Labs','Insurance & Risk'].map(p => (
+              {['Telecom Operators', 'Universities & Labs', 'OEMs', 'System Integrators', 'Enterprises', 'Governments', 'Testing Labs', 'Insurance & Risk'].map(p => (
                 <div key={p} className="flex items-center gap-4 px-6 py-5 rounded-md text-[0.95rem] font-medium cursor-default transition-all duration-300"
                   style={{ color: '#1E293B', background: '#ffffff', border: '1px solid #E2E8F0', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}
                   onMouseEnter={e => {
@@ -95,7 +95,7 @@ export default function FinalSection() {
               ))}
             </div>
           </div>
-          
+
         </div>
       </section>
 
@@ -274,7 +274,7 @@ export default function FinalSection() {
             style={{ borderTop: '1px solid #182E50' }}>
             <span className="font-mono text-[0.64rem] tracking-[0.06em]"
               style={{ color: 'rgba(255,255,255,0.48)' }}>
-              © 2025 Autonomy Trust Labs. All rights reserved.
+              © 2026 Autonomy Trust Labs. All rights reserved.
             </span>
             <span className="font-mono text-[0.64rem] tracking-[0.09em] uppercase"
               style={{ color: '#C8A84C', opacity: 0.75 }}>
