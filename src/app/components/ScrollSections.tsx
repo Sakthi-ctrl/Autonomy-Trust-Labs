@@ -121,12 +121,12 @@ const NODES = [
   {
     label: 'Vision Camera',
     icon: (
-      <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
         <circle cx="12" cy="13" r="3" />
       </svg>
     ),
-    color: '#C8A84C'
+    color: '#1860FF'
   },
   {
     label: 'Connected Devices',
@@ -269,7 +269,7 @@ export function Section3TrustLayer() {
               {[
                 { start: 102, color: '#1860FF' },
                 { start: 306, color: '#1860FF' },
-                { start: 510, color: '#C8A84C' },
+                { start: 510, color: '#1860FF' },
                 { start: 714, color: '#1860FF' },
                 { start: 918, color: '#1860FF' }
               ].map((path, idx) => (

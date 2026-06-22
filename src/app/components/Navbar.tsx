@@ -75,17 +75,7 @@ export default function Navbar() {
               </a>
             </li>
           ))}
-          <li>
-            <a
-              href="#contact"
-              onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '8px 18px', background: '#C8A84C', color: '#06101F', fontWeight: 700, fontSize: '0.82rem', borderRadius: 3, textDecoration: 'none', transition: 'background 0.2s', letterSpacing: '0.01em' }}
-              onMouseEnter={e => (e.currentTarget.style.background = '#DFC170')}
-              onMouseLeave={e => (e.currentTarget.style.background = '#C8A84C')}
-            >
-              Contact Now
-            </a>
-          </li>
+
         </ul>
 
         {/* Mobile hamburger */}
@@ -125,11 +115,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#contact"
-            onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
-            style={{ display: 'inline-flex', justifyContent: 'center', padding: '10px 20px', background: '#C8A84C', color: '#06101F', fontWeight: 700, fontSize: '0.9rem', borderRadius: 3, textDecoration: 'none' }}>
-            Contact Now
-          </a>
+
         </div>
       )}
     </nav>
