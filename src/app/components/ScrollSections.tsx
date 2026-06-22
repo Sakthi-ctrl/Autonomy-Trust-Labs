@@ -94,18 +94,18 @@ export function Section1Reveal() {
 
 /* ── Section 3: Trust Layer Visualization ────────────── */
 const NODES = [
-  { 
-    label: 'Robotics', 
+  {
+    label: 'Robotics',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="3" y="11" width="18" height="10" rx="2" />
         <path d="M12 2v4M8 5h8M8 15h.01M16 15h.01" />
       </svg>
-    ), 
-    color: '#1860FF' 
+    ),
+    color: '#1860FF'
   },
-  { 
-    label: 'Drones', 
+  {
+    label: 'Drones',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
@@ -115,38 +115,38 @@ const NODES = [
         <circle cx="2" cy="12" r="1" />
         <circle cx="22" cy="12" r="1" />
       </svg>
-    ), 
-    color: '#1860FF' 
+    ),
+    color: '#1860FF'
   },
-  { 
-    label: 'Physical AI', 
+  {
+    label: 'Physical AI',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="4" y="4" width="16" height="16" rx="2" />
         <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" />
       </svg>
-    ), 
-    color: '#C8A84C' 
+    ),
+    color: '#C8A84C'
   },
-  { 
-    label: 'Connected Devices', 
+  {
+    label: 'Connected Devices',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2a10 10 0 0 1 10 10M12 6a6 6 0 0 1 6 6M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
         <path d="M12 14v8" />
       </svg>
-    ), 
-    color: '#1860FF' 
+    ),
+    color: '#1860FF'
   },
-  { 
-    label: 'Smart Infrastructure', 
+  {
+    label: 'Smart Infrastructure',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 21h18M5 21V7l8-4v18M13 21V11l5-2v12" />
         <path d="M8 9h2M8 13h2M8 17h2M15 13h1M15 17h1" />
       </svg>
-    ), 
-    color: '#1860FF' 
+    ),
+    color: '#1860FF'
   },
 ];
 
@@ -172,10 +172,11 @@ export function Section3TrustLayer() {
           scrollTrigger: { trigger: ref.current, start: 'top 65%', toggleActions: 'play none none reverse' }
         }
       );
-      
+
       gsap.fromTo('.flowing-line-path',
         { strokeDashoffset: 120, opacity: 0 },
-        { strokeDashoffset: 0, opacity: 1, duration: 2, ease: 'power2.out',
+        {
+          strokeDashoffset: 0, opacity: 1, duration: 2, ease: 'power2.out',
           scrollTrigger: { trigger: ref.current, start: 'top 55%', toggleActions: 'play none none reverse' }
         }
       );
@@ -201,16 +202,16 @@ export function Section3TrustLayer() {
   return (
     <section ref={ref} className="relative z-10 py-32 px-10 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, rgba(6,16,31,0.95) 0%, rgba(10,22,44,0.98) 100%)' }}>
-      
+
       {/* Subtle Corporate Background Glow */}
       <div className="trust-bg-glow absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none"
-           style={{ background: 'radial-gradient(circle, rgba(24,96,255,0.06) 0%, transparent 60%)', filter: 'blur(60px)' }} />
+        style={{ background: 'radial-gradient(circle, rgba(24,96,255,0.06) 0%, transparent 60%)', filter: 'blur(60px)' }} />
 
       <div className="max-w-[1220px] mx-auto relative z-10">
         <div className="text-center mb-24">
           <span className="eyebrow eyebrow-light mb-4 block text-blue tracking-[0.2em] font-semibold">Trust Architecture</span>
           <h2 className="section-title section-title-light tracking-[0.02em] font-light" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
-            Everything Connected <br/><span className="text-white font-medium">Through Trust</span>
+            Everything Connected <br /><span className="text-white font-medium">Through Trust</span>
           </h2>
         </div>
 
@@ -241,7 +242,7 @@ export function Section3TrustLayer() {
               >
                 {/* Node Accent Line */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 <div className="p-3 rounded-full bg-blue/10 text-blue group-hover:bg-blue group-hover:text-white transition-colors duration-300">
                   {n.icon}
                 </div>
@@ -276,7 +277,7 @@ export function Section3TrustLayer() {
             {/* Outer rings */}
             <div className="absolute inset-0 rounded-full border border-gold/20 animate-[spin_10s_linear_infinite] scale-[1.3] opacity-50" />
             <div className="absolute inset-0 rounded-full border border-blue/20 animate-[spin_15s_linear_infinite_reverse] scale-[1.15] opacity-50" />
-            
+
             <div
               className="trust-center flex flex-col items-center justify-center text-center w-64 h-64 rounded-full cursor-default relative z-10"
               style={{
@@ -417,88 +418,6 @@ export function Section3TrustLayer() {
           animation: pulseFlow 1.6s linear infinite;
         }
       `}</style>
-    </section>
-  );
-}
-
-/* ── Section 4: Lifecycle Timeline ──────────────────── */
-const LIFECYCLE_STEPS = [
-  { label: 'Design', desc: 'System architecture and trust requirements definition.' },
-  { label: 'Validate', desc: 'Structured testing and behavioral assurance.' },
-  { label: 'Certify', desc: 'Pre-compliance support and certification readiness.' },
-  { label: 'Deploy', desc: 'Trusted deployment into real-world environments.' },
-  { label: 'Monitor', desc: 'Runtime compliance and performance tracking.' },
-  { label: 'Update', desc: 'Governed OTA and AI model update validation.' },
-  { label: 'Renew', desc: 'Lifecycle renewal and re-certification cycles.' },
-  { label: 'Scale', desc: 'Trusted scaling across fleets and geographies.' },
-];
-
-export function Section4Lifecycle() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const steps = gsap.utils.toArray<HTMLElement>('.lc-step');
-      steps.forEach((el, i) => {
-        gsap.fromTo(el,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
-            scrollTrigger: {
-              trigger: ref.current,
-              start: `top ${70 - i * 4}%`,
-              toggleActions: 'play none none reverse',
-            },
-            delay: i * 0.1,
-          }
-        );
-      });
-    }, ref);
-    return () => ctx.revert();
-  }, []);
-
-  return (
-    <section ref={ref} className="relative z-10 py-32 px-10"
-      style={{ background: 'rgba(6,16,31,0.85)' }}>
-      <div className="max-w-[1220px] mx-auto">
-        <div className="mb-12">
-          <span className="eyebrow eyebrow-light mb-3">Full Lifecycle Assurance</span>
-          <h2 className="section-title section-title-light mb-4 tracking-[0.03em]" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
-            End-to-End Trust Pipeline
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-1">
-          {LIFECYCLE_STEPS.map((step, i) => (
-            <div key={step.label} className="lc-step p-6 flex flex-col gap-3"
-              style={{
-                opacity: 0,
-                background: 'rgba(255,255,255,0.03)',
-                border: '1px solid rgba(255,255,255,0.07)',
-              }}>
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full flex-shrink-0"
-                  style={{
-                    background: i < 3 ? '#C8A84C' : '#1860FF',
-                    boxShadow: i < 3 ? '0 0 8px rgba(200,168,76,0.5)' : '0 0 8px rgba(24,96,255,0.5)',
-                  }} />
-                <span className="font-mono text-[0.6rem] tracking-[0.1em] uppercase text-text-on-dark-muted">
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-              </div>
-              <div className="font-display text-white text-xl tracking-[0.03em]">{step.label}</div>
-              <p className="text-[0.8rem] leading-relaxed" style={{ color: 'rgba(255,255,255,0.45)' }}>
-                {step.desc}
-              </p>
-              {i < LIFECYCLE_STEPS.length - 1 && (
-                <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 text-border-dark text-xs">
-                  →
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

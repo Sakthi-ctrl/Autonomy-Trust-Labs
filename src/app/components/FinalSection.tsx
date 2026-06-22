@@ -13,7 +13,6 @@ const CONTACT_TYPES = [
 ];
 
 const FOOTER_LINKS = {
-  Platform: ['ATL CertEdge™','ATL TrustCloud™','ATL RiskScore™','ATL Digital Registry™','ATL LabOS™','ATL OTA Shield™'],
   Company:  ['About ATL','Solutions','Industries','Partners','Contact'],
   'Focus Areas': ['Physical AI Readiness','Autonomous Assurance','Runtime Monitoring','Risk Intelligence','OTA & Lifecycle','Lab Enablement'],
 };
@@ -36,64 +35,61 @@ export default function FinalSection() {
     <>
       {/* ── Partners & About ──────────────────────────── */}
       <section id="partners" className="relative z-10 py-32 px-10"
-        style={{ background: 'rgba(255,255,255,0.97)' }}>
-        <div className="max-w-[1220px] mx-auto">
-          <span className="eyebrow mb-3">Partners</span>
-          <h2 className="section-title mb-14 tracking-[0.03em]" style={{ maxWidth: 520, fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
-            Building trusted autonomy with the right partners.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div>
-              <p className="section-lead mb-8">
-                We work with strategic partners who are building the future of trusted autonomy — from hardware to infrastructure, standards to deployment.
-              </p>
-              <h3 className="font-display text-text-dark text-[1.1rem] mb-4 tracking-[0.03em]">Partner Types</h3>
-              <div className="grid grid-cols-2 gap-2 mb-10">
-                {['Telecom Operators','Universities & Labs','OEMs','System Integrators','Enterprises','Governments','Testing Labs','Insurance & Risk'].map(p => (
-                  <div key={p} className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-sm text-[0.875rem] text-text-body"
-                    style={{ background: '#F6F8FD', border: '1px solid #D3DEED' }}>
-                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
-                    {p}
-                  </div>
-                ))}
-              </div>
-              <div className="p-8 rounded-sm" style={{ background: '#06101F' }}>
-                <p className="text-[1rem] mb-5" style={{ color: 'rgba(255,255,255,0.86)', lineHeight: 1.7 }}>
-                  Interested in building trusted autonomous systems together? Contact us to explore partnership opportunities.
-                </p>
-                <button onClick={() => scrollTo('#contact')}
-                  className="inline-flex items-center gap-1.5 px-6 py-3 rounded-sm font-semibold text-[0.9rem] transition-all duration-200 cursor-pointer"
-                  style={{ background: 'transparent', color: '#DFC170', border: '2px solid rgba(200,168,76,0.4)' }}
-                  onMouseEnter={e => Object.assign(e.currentTarget.style, { background: 'rgba(200,168,76,0.1)', borderColor: '#C8A84C' })}
-                  onMouseLeave={e => Object.assign(e.currentTarget.style, { background: 'transparent', borderColor: 'rgba(200,168,76,0.4)' })}
+        style={{ background: '#F8FAFC' }}>
+        <div className="max-w-[1220px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          
+          {/* Left: Copy & CTA */}
+          <div className="lg:col-span-5">
+            <span className="eyebrow mb-4 block tracking-[0.2em] font-semibold" style={{ color: '#1860FF' }}>PARTNERS</span>
+            <h2 className="font-display leading-[1.05] mb-6 tracking-[0.02em]" 
+                style={{ color: '#06101F', fontSize: 'clamp(2.5rem,4.5vw,3.6rem)' }}>
+              Building trusted autonomy with the right partners.
+            </h2>
+            <p className="text-[1.05rem] leading-relaxed mb-10" style={{ color: '#475569' }}>
+              We work with strategic partners who are building the future of trusted autonomy — from hardware to infrastructure, standards to deployment. Interested in building trusted autonomous systems together?
+            </p>
+            <button onClick={() => scrollTo('#contact')}
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold text-[0.95rem] transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl"
+              style={{ background: '#06101F', color: '#fff', border: '2px solid #06101F' }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#1860FF';
+                e.currentTarget.style.borderColor = '#1860FF';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = '#06101F';
+                e.currentTarget.style.borderColor = '#06101F';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
+            >
+              Become a Partner →
+            </button>
+          </div>
+
+          {/* Right: Partner Types Grid */}
+          <div className="lg:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {['Telecom Operators','Universities & Labs','OEMs','System Integrators','Enterprises','Governments','Testing Labs','Insurance & Risk'].map(p => (
+                <div key={p} className="flex items-center gap-4 px-6 py-5 rounded-md text-[0.95rem] font-medium cursor-default transition-all duration-300"
+                  style={{ color: '#1E293B', background: '#ffffff', border: '1px solid #E2E8F0', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.borderColor = '#1860FF';
+                    e.currentTarget.style.boxShadow = '0 10px 30px rgba(24,96,255,0.08)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.borderColor = '#E2E8F0';
+                    e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.03)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
                 >
-                  Become a Partner →
-                </button>
-              </div>
-            </div>
-            <div>
-              <h3 className="font-display text-text-dark text-[1.1rem] mb-5 tracking-[0.03em]">Partnership Opportunities</h3>
-              <div className="flex flex-col">
-                {[
-                  'Physical AI trust labs',
-                  'Connected autonomy assurance programs',
-                  'Device and deployment validation',
-                  'Partner lab enablement',
-                  'Joint pilot programs',
-                  'Research and workforce collaboration',
-                  'Trusted registry participation',
-                ].map((opp, i) => (
-                  <div key={opp} className="flex items-start gap-4 py-4 border-b border-border-light text-[0.9rem] text-text-body"
-                    style={{ borderTop: i === 0 ? '1px solid #D3DEED' : undefined }}>
-                    <span className="font-mono text-[0.62rem] tracking-[0.05em] text-text-muted pt-0.5 flex-shrink-0">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    {opp}
-                  </div>
-                ))}
-              </div>
+                  <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: '#C8A84C', boxShadow: '0 0 8px rgba(200,168,76,0.5)' }} />
+                  {p}
+                </div>
+              ))}
             </div>
           </div>
+          
         </div>
       </section>
 
@@ -243,7 +239,7 @@ export default function FinalSection() {
       <footer className="relative z-10 px-10 pt-16 pb-8"
         style={{ background: '#06101F', borderTop: '1px solid #182E50' }}>
         <div className="max-w-[1220px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-14 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-14 mb-12">
             {/* Brand */}
             <div>
               <div className="mb-6">

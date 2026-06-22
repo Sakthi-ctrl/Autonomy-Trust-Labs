@@ -9,7 +9,6 @@ import HeroSection from './components/HeroSection';
 import {
   Section1Reveal,
   Section3TrustLayer,
-  Section4Lifecycle,
   Section5Industries,
 } from './components/ScrollSections';
 import SolutionsSection from './components/SolutionsSection';
@@ -141,9 +140,8 @@ export default function HomePage() {
         {/* Scroll storytelling — each section has its own solid/semi bg */}
         <Section1Reveal />
         <Section3TrustLayer />
-        <Section4Lifecycle />
-        <Section5Industries />
         <SolutionsSection />
+        <Section5Industries />
 
         {/* Light corporate sections + footer */}
         <FinalSection />
