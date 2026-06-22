@@ -140,7 +140,6 @@ export default function HomePage() {
         {/* Scroll storytelling — each section has its own solid/semi bg */}
         <Section1Reveal />
         <Section3TrustLayer />
-        <SolutionsSection />
         <Section5Industries />
 
         {/* Light corporate sections + footer */}

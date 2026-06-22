@@ -119,11 +119,11 @@ const NODES = [
     color: '#1860FF'
   },
   {
-    label: 'Physical AI',
+    label: 'Vision Camera',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="4" y="4" width="16" height="16" rx="2" />
-        <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" />
+        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+        <circle cx="12" cy="13" r="3"/>
       </svg>
     ),
     color: '#C8A84C'
@@ -208,6 +208,20 @@ export function Section3TrustLayer() {
         style={{ background: 'radial-gradient(circle, rgba(24,96,255,0.06) 0%, transparent 60%)', filter: 'blur(60px)' }} />
 
       <div className="max-w-[1220px] mx-auto relative z-10">
+        <div className="text-center mb-24 max-w-[850px] mx-auto relative">
+          {/* Subtle text glow */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-blue/5 rounded-full blur-[60px] pointer-events-none" />
+          
+          <h2 className="font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70 leading-[1.05] mb-6 uppercase tracking-[0.03em] relative z-10" 
+              style={{ fontSize: 'clamp(3rem,6vw,4.5rem)', textShadow: '0 10px 40px rgba(255,255,255,0.1)' }}>
+            ATL Platform
+          </h2>
+          
+          <p className="text-[1.15rem] leading-[1.8] font-light relative z-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
+            From Pilot to Trusted Deployment, our platform combines <span className="text-white font-medium">assurance software</span>, <span className="text-white font-medium">testing methodology</span>, <span className="text-white font-medium">risk intelligence</span>, and <span className="text-white font-medium">lifecycle monitoring</span>.
+          </p>
+        </div>
+
         <div className="text-center mb-24">
           <span className="eyebrow eyebrow-light mb-4 block text-blue tracking-[0.2em] font-semibold">Trust Architecture</span>
           <h2 className="section-title section-title-light tracking-[0.02em] font-light" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
@@ -241,9 +255,9 @@ export function Section3TrustLayer() {
                 }}
               >
                 {/* Node Accent Line */}
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <div className="p-3 rounded-full bg-blue/10 text-blue group-hover:bg-blue group-hover:text-white transition-colors duration-300">
+                <div className="p-3 rounded-full bg-blue/10 text-blue group-hover:bg-gold/10 group-hover:text-gold group-hover:shadow-[0_0_15px_rgba(200,168,76,0.3)] transition-all duration-300">
                   {n.icon}
                 </div>
                 <span className="tracking-[0.02em] font-display text-[0.95rem] text-center">{n.label}</span>
@@ -291,8 +305,8 @@ export function Section3TrustLayer() {
               <div className="font-display text-transparent bg-clip-text bg-gradient-to-r from-gold to-gold-light text-3xl leading-none mb-1.5 tracking-[0.06em] uppercase">Autonomy</div>
               <div className="font-display text-white text-3xl leading-none mb-4 tracking-[0.06em] uppercase">Trust Labs</div>
               <div className="px-4 py-1.5 rounded-full bg-blue/10 border border-blue/20">
-                <div className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-blue-light font-bold">
-                  Trust Core
+                <div className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-white font-bold">
+                  Platform
                 </div>
               </div>
             </div>
@@ -310,15 +324,15 @@ export function Section3TrustLayer() {
 
           {/* Final Outcome Card */}
           <div
-            className="trust-outcome relative overflow-hidden flex items-center gap-6 px-12 py-6 rounded-xl cursor-default w-full max-w-[600px]"
+            className="trust-outcome relative overflow-hidden flex flex-col items-center justify-center text-center gap-4 px-12 py-8 rounded-xl cursor-default w-full max-w-[600px] mx-auto"
             style={{
-              background: 'linear-gradient(90deg, rgba(200, 168, 76, 0.05) 0%, rgba(200, 168, 76, 0.01) 100%)',
+              background: 'linear-gradient(180deg, rgba(200, 168, 76, 0.05) 0%, rgba(200, 168, 76, 0.01) 100%)',
               border: '1px solid rgba(200, 168, 76, 0.2)',
               boxShadow: '0 12px 40px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.05)',
               backdropFilter: 'blur(16px)',
             }}
           >
-            <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-gold to-gold-dark" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gold to-gold-dark" />
             <div className="p-3 rounded-full bg-gold/10 text-gold shadow-[0_0_20px_rgba(200,168,76,0.2)]">
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -327,7 +341,7 @@ export function Section3TrustLayer() {
             </div>
             <div>
               <div className="font-display text-white text-2xl tracking-[0.04em] uppercase mb-1">Trusted Deployment</div>
-              <div className="font-mono text-[0.7rem] tracking-[0.15em] uppercase text-gold-light opacity-80 flex gap-2">
+              <div className="font-mono text-[0.7rem] tracking-[0.15em] uppercase text-gold-light opacity-80 flex justify-center gap-2">
                 <span>Safe</span><span className="text-white/30">•</span>
                 <span>Secure</span><span className="text-white/30">•</span>
                 <span>Certifiable</span><span className="text-white/30">•</span>
@@ -369,7 +383,7 @@ export function Section3TrustLayer() {
           >
             <div className="font-display text-gold text-xl leading-tight uppercase tracking-wider">Autonomy</div>
             <div className="font-display text-white text-xl leading-tight uppercase tracking-wider mb-2">Trust Labs</div>
-            <div className="font-mono text-[0.55rem] tracking-[0.15em] uppercase text-blue-light">Trust Core</div>
+            <div className="font-mono text-[0.55rem] tracking-[0.15em] uppercase text-white">Trust Core</div>
           </div>
 
           <div className="w-px h-12 bg-gradient-to-b from-gold to-transparent opacity-50" />
@@ -424,15 +438,78 @@ export function Section3TrustLayer() {
 
 /* ── Section 5: Industries Grid ──────────────────────── */
 const INDUSTRIES = [
-  { label: 'Manufacturing', icon: '🏭' },
-  { label: 'Telecom', icon: '📡' },
-  { label: 'Logistics', icon: '📦' },
-  { label: 'Warehousing', icon: '🏪' },
-  { label: 'Healthcare', icon: '🏥' },
-  { label: 'Smart Cities', icon: '🏙' },
-  { label: 'Defense', icon: '🛡' },
-  { label: 'Energy', icon: '⚡' },
-  { label: 'Infrastructure', icon: '🏗' },
+  { 
+    label: 'Manufacturing', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Telecom', 
+    icon: (
+      <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4.9 19.1a10 10 0 0 1 0-14.2"/><path d="M8.4 15.6a5 5 0 0 1 0-7.2"/><circle cx="12" cy="12" r="2"/><path d="M15.6 15.6a5 5 0 0 0 0-7.2"/><path d="M19.1 19.1a10 10 0 0 0 0-14.2"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Logistics', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h2"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Warehousing', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Healthcare', 
+    icon: (
+      <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Smart Cities', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Defense', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Energy', 
+    icon: (
+      <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+      </svg>
+    ) 
+  },
+  { 
+    label: 'Infrastructure', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 21h18M5 21V7l8-4v18M13 21V11l5-2v12"/><path d="M8 9h2M8 13h2M8 17h2M15 13h1M15 17h1"/>
+      </svg>
+    ) 
+  },
 ];
 
 export function Section5Industries() {

@@ -13,8 +13,8 @@ const CONTACT_TYPES = [
 ];
 
 const FOOTER_LINKS = {
-  Company:  ['About ATL','Solutions','Industries','Partners','Contact'],
-  'Focus Areas': ['Physical AI Readiness','Autonomous Assurance','Runtime Monitoring','Risk Intelligence','OTA & Lifecycle','Lab Enablement'],
+  Company:  ['About ATL','Solutions','Industries','Partners'],
+  Connect:  ['Contact Us', 'LinkedIn', 'Twitter'],
 };
 
 export default function FinalSection() {
@@ -111,20 +111,12 @@ export default function FinalSection() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <button onClick={() => scrollTo('#contact')}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold text-[0.95rem] transition-all duration-200 cursor-pointer"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-sm font-semibold text-[0.95rem] transition-all duration-200 cursor-pointer"
               style={{ background: '#1860FF', color: '#fff', border: '2px solid #1860FF' }}
               onMouseEnter={e => Object.assign(e.currentTarget.style, { background: '#1245CC', borderColor: '#1245CC' })}
               onMouseLeave={e => Object.assign(e.currentTarget.style, { background: '#1860FF', borderColor: '#1860FF' })}
             >
-              Partner With Us
-            </button>
-            <button onClick={() => scrollTo('#contact')}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-sm font-semibold text-[0.95rem] transition-all duration-200 cursor-pointer"
-              style={{ background: 'transparent', color: '#fff', border: '2px solid rgba(255,255,255,0.36)' }}
-              onMouseEnter={e => Object.assign(e.currentTarget.style, { background: 'rgba(255,255,255,0.07)', borderColor: 'rgba(255,255,255,0.65)' })}
-              onMouseLeave={e => Object.assign(e.currentTarget.style, { background: 'transparent', borderColor: 'rgba(255,255,255,0.36)' })}
-            >
-              Contact ATL
+              Subscribe
             </button>
           </div>
         </div>
@@ -144,14 +136,7 @@ export default function FinalSection() {
               <p className="text-[0.92rem] leading-[1.72] text-text-mid mb-8">
                 We are currently engaging with selected partners, customers, labs, and strategic investors. Contact us to begin the conversation.
               </p>
-              <div className="flex flex-col gap-3">
-                {CONTACT_TYPES.map(ct => (
-                  <div key={ct} className="flex items-center gap-3 text-[0.875rem] text-text-body">
-                    <span className="w-2 h-2 rounded-full bg-blue flex-shrink-0" />
-                    {ct}
-                  </div>
-                ))}
-              </div>
+
             </div>
 
             {/* Contact form */}
@@ -194,17 +179,14 @@ export default function FinalSection() {
                       <label className="font-mono text-[0.63rem] tracking-[0.11em] uppercase text-text-mid">
                         Area of Interest
                       </label>
-                      <select
+                      <input
+                        type="text"
+                        placeholder="e.g. Partnership, Pilot, Investment..."
                         className="px-4 py-2.5 rounded-sm text-[0.93rem] text-text-dark outline-none transition-colors duration-200"
                         style={{ background: '#F6F8FD', border: '1px solid #D3DEED' }}
                         onFocus={e => e.currentTarget.style.borderColor = '#1860FF'}
                         onBlur={e => e.currentTarget.style.borderColor = '#D3DEED'}
-                      >
-                        <option value="">Select an area...</option>
-                        {['Partnership','Customer Pilot','Investor Discussion','Lab Enablement','OEM Readiness','Enterprise Deployment','Government / Smart City Program','Other'].map(o => (
-                          <option key={o}>{o}</option>
-                        ))}
-                      </select>
+                      />
                     </div>
                     <div className="col-span-2 flex flex-col gap-1.5">
                       <label className="font-mono text-[0.63rem] tracking-[0.11em] uppercase text-text-mid">

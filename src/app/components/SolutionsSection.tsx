@@ -64,13 +64,10 @@ export default function SolutionsSection() {
 
         {/* Header */}
         <div className="mb-20 sol-header">
-          <span className="eyebrow eyebrow-light mb-4 block tracking-[0.2em] font-semibold" style={{ color: '#1860FF' }}>
-            PLATFORM &amp; SERVICES
-          </span>
           <div className="flex items-end justify-between flex-wrap gap-6">
             <div className="max-w-[700px]">
               <h2 className="font-display tracking-[0.02em] text-white leading-[1.05] mb-5 uppercase" style={{ fontSize: 'clamp(2.5rem,5vw,3.5rem)' }}>
-                Our Solutions
+                Platform instead of Our Solutions
               </h2>
               <p className="text-[1.1rem] leading-relaxed" style={{ color: 'rgba(255,255,255,0.7)' }}>
                 We combine software, testing methodology, risk intelligence, and lifecycle assurance to help autonomous systems move from pilot to trusted deployment.
