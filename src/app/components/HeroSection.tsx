@@ -20,13 +20,13 @@ export default function HeroSection({ isReady = true }: HeroSectionProps) {
 
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-      
+
       // Animate hero heading lines one by one
-      tl.fromTo('.hero-text-line', 
-          { opacity: 0, y: 40 }, 
-          { opacity: 1, y: 0, duration: 1, stagger: 0.15 }, 
-          0.3
-        )
+      tl.fromTo('.hero-text-line',
+        { opacity: 0, y: 40 },
+        { opacity: 1, y: 0, duration: 1, stagger: 0.15 },
+        0.3
+      )
         .fromTo(descRef.current, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.9 }, 0.55)
         .fromTo(actionsRef.current, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.8 }, 0.75)
         .fromTo(statsRef.current, { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.8 }, 0.6);
@@ -119,36 +119,6 @@ export default function HeroSection({ isReady = true }: HeroSectionProps) {
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Lifecycle pipeline */}
-      <div className="relative z-10 max-w-[1220px] mx-auto w-full px-10 border-t border-border-dark">
-        <div className="font-mono text-[0.62rem] tracking-[0.13em] uppercase text-text-on-dark-muted py-5">
-          Full Lifecycle Assurance Pipeline
-        </div>
-        <div className="flex items-center pb-7 overflow-x-auto scrollbar-none">
-          {LIFECYCLE.map((step, i) => (
-            <div key={step} className="flex items-center">
-              <div className="flex flex-col items-center flex-shrink-0">
-                <div className={`w-2.5 h-2.5 rounded-full ${i < 3 ? 'bg-gold shadow-[0_0_0_3px_rgba(200,168,76,0.2)]' : 'bg-blue shadow-[0_0_0_3px_rgba(24,96,255,0.18)]'}`}
-                  style={i < 3 ? { animation: 'goldPulse 2.8s ease-in-out infinite' } : {}} />
-                <span className={`font-mono text-[0.64rem] tracking-[0.07em] mt-2.5 whitespace-nowrap ${i < 3 ? 'text-gold-light' : 'text-text-on-dark-muted'}`}>
-                  {step}
-                </span>
-              </div>
-              {i < LIFECYCLE.length - 1 && (
-                <div className="flex-1 min-w-[44px] h-px mx-0 bg-border-dark relative overflow-hidden" style={{ top: '-9px' }}>
-                  <div className="absolute top-0 left-[-100%] h-full w-full"
-                    style={{
-                      background: 'linear-gradient(90deg, transparent, #1860FF, #C8A84C, transparent)',
-                      animation: `lineTravel 4.5s ease-in-out infinite`,
-                      animationDelay: `${i * 0.56}s`,
-                    }} />
-                </div>
-              )}
-            </div>
-          ))}
         </div>
       </div>
 

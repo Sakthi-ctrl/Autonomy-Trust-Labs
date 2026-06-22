@@ -6,17 +6,33 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* ── Section 1: Large Reveal ───────────────────────── */
+/* ── Combined Section: The Shift & Capabilities ─────── */
+const CAPABILITIES = [
+  { phrase: 'They Can Sense', sub: 'Perceiving the physical world through advanced sensor fusion and AI perception.' },
+  { phrase: 'They Can Decide', sub: 'Making complex autonomous decisions in real-time, without human intervention.' },
+  { phrase: 'They Can Move', sub: 'Navigating dynamic, unpredictable environments with precision and autonomy.' },
+  { phrase: 'They Can Act', sub: 'Taking consequential real-world actions that affect people and infrastructure.' },
+];
+
 export function Section1Reveal() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const lines = gsap.utils.toArray<HTMLElement>('.reveal-line');
-      gsap.fromTo(lines,
-        { opacity: 0, y: 60 },
+      // Left: Headline lines staggered
+      gsap.fromTo('.reveal-line',
+        { opacity: 0, y: 40 },
         {
-          opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', stagger: 0.25,
+          opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.18,
+          scrollTrigger: { trigger: ref.current, start: 'top 75%', toggleActions: 'play none none reverse' }
+        }
+      );
+
+      // Right: Cards staggered
+      gsap.fromTo('.cap-card',
+        { opacity: 0, y: 30 },
+        {
+          opacity: 1, y: 0, duration: 0.8, ease: 'power3.out', stagger: 0.12,
           scrollTrigger: { trigger: ref.current, start: 'top 70%', toggleActions: 'play none none reverse' }
         }
       );
@@ -25,76 +41,52 @@ export function Section1Reveal() {
   }, []);
 
   return (
-    <section ref={ref} className="relative z-10 min-h-screen flex items-center justify-center px-10 py-32"
-      style={{ background: 'rgba(6,16,31,0.75)' }}>
-      <div className="max-w-[1220px] mx-auto text-center flex flex-col items-center">
-        <span className="reveal-line eyebrow eyebrow-light mb-6 text-center block w-full">The Shift</span>
-        <h2 className="font-display text-white text-center leading-[0.98] tracking-[0.03em] flex flex-col items-center"
-          style={{ fontSize: 'clamp(3rem,7vw,6.5rem)' }}>
-          <span className="reveal-line block opacity-0">Autonomous Systems</span>
-          <span className="reveal-line block opacity-0">Are Moving Into</span>
-          <span className="reveal-line block text-gold opacity-0">The Real World</span>
-        </h2>
-      </div>
-    </section>
-  );
-}
-
-/* ── Section 2: Sense / Decide / Move / Act ─────────── */
-const CAPABILITIES = [
-  { phrase: 'They Can Sense', sub: 'Perceiving the physical world through advanced sensor fusion and AI perception.' },
-  { phrase: 'They Can Decide', sub: 'Making complex autonomous decisions in real-time, without human intervention.' },
-  { phrase: 'They Can Move', sub: 'Navigating dynamic, unpredictable environments with precision and autonomy.' },
-  { phrase: 'They Can Act', sub: 'Taking consequential real-world actions that affect people and infrastructure.' },
-];
-
-export function Section2Capabilities() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const items = gsap.utils.toArray<HTMLElement>('.cap-item');
-      items.forEach((el, i) => {
-        gsap.fromTo(el,
-          { opacity: 0, x: i % 2 === 0 ? -50 : 50 },
-          {
-            opacity: 1, x: 0, duration: 0.9, ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 75%', toggleActions: 'play none none reverse' }
-          }
-        );
-      });
-    }, ref);
-    return () => ctx.revert();
-  }, []);
-
-  return (
     <section ref={ref} className="relative z-10 py-32 px-10"
-      style={{ background: 'rgba(11,29,58,0.8)' }}>
-      <div className="max-w-[1220px] mx-auto">
-        <span className="eyebrow eyebrow-light mb-4">Autonomous Capabilities</span>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-          {CAPABILITIES.map((c, i) => (
-            <div key={c.phrase} className="cap-item p-10 flex flex-col justify-between min-h-[220px]"
-              style={{
-                background: 'rgba(255,255,255,0.04)',
-                border: '1px solid rgba(255,255,255,0.08)',
-                opacity: 0,
-              }}>
-              <div>
-                <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-text-on-dark-muted mb-4">
-                  0{i + 1}
-                </div>
-                <h3 className="font-display text-white leading-tight mb-3 tracking-[0.03em]"
-                  style={{ fontSize: 'clamp(2rem,4vw,3.4rem)' }}>
-                  {c.phrase}
-                </h3>
-              </div>
-              <p className="text-[0.9rem] leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
-                {c.sub}
-              </p>
-            </div>
-          ))}
+      style={{ background: 'rgba(6,16,31,0.78)' }}>
+      <div className="max-w-[1220px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        {/* Left Column: The Shift Headline */}
+        <div className="lg:col-span-5 flex flex-col justify-center">
+          <span className="reveal-line eyebrow eyebrow-light mb-5">The Shift</span>
+          <h2 className="font-display text-white leading-[0.98] tracking-[0.03em] flex flex-col mb-6"
+            style={{ fontSize: 'clamp(2.5rem,5.5vw,4.5rem)' }}>
+            <span className="reveal-line block opacity-0">Autonomous Systems</span>
+            <span className="reveal-line block opacity-0">Are Moving Into</span>
+            <span className="reveal-line block text-gold opacity-0">The Real World</span>
+          </h2>
+          <p className="reveal-line text-[0.95rem] leading-relaxed text-text-on-dark-muted max-w-[440px] opacity-0">
+            Assuring trust across the entire lifecycle is no longer optional—it is the prerequisite for real-world deployment.
+          </p>
         </div>
+
+        {/* Right Column: Capabilities Cards */}
+        <div className="lg:col-span-7">
+          <span className="cap-card eyebrow eyebrow-light mb-5 block opacity-0">Autonomous Capabilities</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
+            {CAPABILITIES.map((c, i) => (
+              <div key={c.phrase} className="cap-card p-8 flex flex-col justify-between min-h-[200px]"
+                style={{
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.07)',
+                  opacity: 0,
+                }}>
+                <div>
+                  <div className="font-mono text-[0.58rem] tracking-[0.1em] uppercase text-text-on-dark-muted mb-4">
+                    0{i + 1}
+                  </div>
+                  <h3 className="font-display text-white leading-tight mb-3 tracking-[0.03em]"
+                    style={{ fontSize: 'clamp(1.5rem,3.2vw,2.2rem)' }}>
+                    {c.phrase}
+                  </h3>
+                </div>
+                <p className="text-[0.84rem] leading-relaxed" style={{ color: 'rgba(255,255,255,0.52)' }}>
+                  {c.sub}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </section>
   );

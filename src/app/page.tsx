@@ -8,7 +8,6 @@ import Preloader   from './components/Preloader';
 import HeroSection from './components/HeroSection';
 import {
   Section1Reveal,
-  Section2Capabilities,
   Section3TrustLayer,
   Section4Lifecycle,
   Section5Industries,
@@ -141,7 +140,6 @@ export default function HomePage() {
 
         {/* Scroll storytelling — each section has its own solid/semi bg */}
         <Section1Reveal />
-        <Section2Capabilities />
         <Section3TrustLayer />
         <Section4Lifecycle />
         <Section5Industries />
