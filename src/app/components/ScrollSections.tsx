@@ -44,7 +44,7 @@ export function Section1Reveal() {
     <section ref={ref} className="relative z-10 py-32 px-10"
       style={{ background: 'rgba(6,16,31,0.78)' }}>
       <div className="max-w-[1220px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
-        
+
         {/* Left Column: The Shift Headline */}
         <div className="lg:col-span-5 flex flex-col justify-center">
           <span className="reveal-line eyebrow eyebrow-light mb-5">The Shift</span>
@@ -61,7 +61,7 @@ export function Section1Reveal() {
 
         {/* Right Column: Capabilities Cards */}
         <div className="lg:col-span-7">
-          <span className="cap-card eyebrow eyebrow-light mb-5 block opacity-0">Autonomous Capabilities</span>
+          <span className="cap-card eyebrow eyebrow-light mb-5 block opacity-0"></span>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
             {CAPABILITIES.map((c, i) => (
               <div key={c.phrase} className="cap-card p-8 flex flex-col justify-between min-h-[200px]"
@@ -94,11 +94,60 @@ export function Section1Reveal() {
 
 /* ── Section 3: Trust Layer Visualization ────────────── */
 const NODES = [
-  { label: 'Robotics', icon: '🤖', color: '#1860FF' },
-  { label: 'Drones', icon: '🚁', color: '#1860FF' },
-  { label: 'Physical AI', icon: '⚡', color: '#C8A84C' },
-  { label: 'Connected Devices', icon: '📡', color: '#1860FF' },
-  { label: 'Smart Infrastructure', icon: '🏗', color: '#1860FF' },
+  { 
+    label: 'Robotics', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="11" width="18" height="10" rx="2" />
+        <path d="M12 2v4M8 5h8M8 15h.01M16 15h.01" />
+      </svg>
+    ), 
+    color: '#1860FF' 
+  },
+  { 
+    label: 'Drones', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+        <path d="M2 12h7M15 12h7M12 2v7M12 15v7" />
+        <circle cx="12" cy="2" r="1" />
+        <circle cx="12" cy="22" r="1" />
+        <circle cx="2" cy="12" r="1" />
+        <circle cx="22" cy="12" r="1" />
+      </svg>
+    ), 
+    color: '#1860FF' 
+  },
+  { 
+    label: 'Physical AI', 
+    icon: (
+      <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M9 9h6v6H9zM9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 15h3M1 9h3M1 15h3" />
+      </svg>
+    ), 
+    color: '#C8A84C' 
+  },
+  { 
+    label: 'Connected Devices', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 2a10 10 0 0 1 10 10M12 6a6 6 0 0 1 6 6M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+        <path d="M12 14v8" />
+      </svg>
+    ), 
+    color: '#1860FF' 
+  },
+  { 
+    label: 'Smart Infrastructure', 
+    icon: (
+      <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 21h18M5 21V7l8-4v18M13 21V11l5-2v12" />
+        <path d="M8 9h2M8 13h2M8 17h2M15 13h1M15 17h1" />
+      </svg>
+    ), 
+    color: '#1860FF' 
+  },
 ];
 
 export function Section3TrustLayer() {
@@ -107,23 +156,23 @@ export function Section3TrustLayer() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo('.trust-node',
-        { opacity: 0, scale: 0.7 },
+        { opacity: 0, scale: 0.8 },
         {
-          opacity: 1, scale: 1, duration: 0.7, ease: 'back.out(1.4)', stagger: 0.12,
-          scrollTrigger: { trigger: ref.current, start: 'top 60%', toggleActions: 'play none none reverse' }
+          opacity: 1, scale: 1, duration: 0.7, ease: 'power3.out', stagger: 0.1,
+          scrollTrigger: { trigger: ref.current, start: 'top 65%', toggleActions: 'play none none reverse' }
         }
       );
       gsap.fromTo('.trust-center',
-        { opacity: 0, scale: 0.5 },
+        { opacity: 0, scale: 0.7 },
         {
-          opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(2)',
+          opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.5)',
           scrollTrigger: { trigger: ref.current, start: 'top 55%', toggleActions: 'play none none reverse' }
         }
       );
       gsap.fromTo('.trust-outcome',
-        { opacity: 0, y: 30 },
+        { opacity: 0, y: 35 },
         {
-          opacity: 1, y: 0, duration: 0.8, delay: 0.5, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.8, delay: 0.4, ease: 'power3.out',
           scrollTrigger: { trigger: ref.current, start: 'top 50%', toggleActions: 'play none none reverse' }
         }
       );
@@ -133,93 +182,204 @@ export function Section3TrustLayer() {
 
   return (
     <section ref={ref} className="relative z-10 py-32 px-10"
-      style={{ background: 'rgba(14,35,71,0.82)' }}>
+      style={{ background: 'rgba(6,16,31,0.80)' }}>
       <div className="max-w-[1220px] mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-20">
           <span className="eyebrow eyebrow-light mb-3">Trust Layer</span>
           <h2 className="section-title section-title-light tracking-[0.03em]" style={{ fontSize: 'clamp(2rem,4vw,3.2rem)' }}>
             Everything Connected Through Trust
           </h2>
         </div>
 
-        {/* Visualization */}
-        <div className="flex flex-col items-center gap-8">
-          {/* Source nodes */}
-          <div className="flex flex-wrap justify-center gap-4">
+        {/* Desktop Architecture Schematic View */}
+        <div className="hidden md:flex flex-col items-center">
+          {/* Nodes Row */}
+          <div className="flex justify-between w-full max-w-[960px] gap-4 mb-2">
             {NODES.map(n => (
               <div key={n.label}
-                className="trust-node flex items-center gap-2.5 px-5 py-3 rounded-sm font-medium text-[0.88rem] text-white cursor-default"
+                className="trust-node flex items-center justify-center gap-2.5 px-6 py-4 rounded-sm font-medium text-[0.88rem] text-white cursor-default flex-1"
                 style={{
                   opacity: 0,
-                  background: 'rgba(255,255,255,0.05)',
-                  border: `1px solid ${n.color}44`,
-                  boxShadow: `0 0 12px ${n.color}22`,
-                }}>
-                <span className="text-xl">{n.icon}</span>
-                {n.label}
+                  background: 'rgba(255, 255, 255, 0.02)',
+                  border: `1px solid ${n.color}26`,
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.03)',
+                  backdropFilter: 'blur(4px)',
+                  transition: 'all 0.3s ease',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.borderColor = n.color;
+                  e.currentTarget.style.boxShadow = `0 0 16px ${n.color}33`;
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.borderColor = `${n.color}26`;
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.03)';
+                }}
+              >
+                {n.icon}
+                <span className="tracking-[0.01em] font-mono text-[0.82rem]">{n.label}</span>
               </div>
             ))}
           </div>
 
-          {/* Connectors */}
-          <div className="flex items-center gap-3">
-            {[0,1,2].map(i => (
-              <div key={i} className="h-px w-16 bg-gradient-to-r from-border-dark via-blue/40 to-border-dark"
-                style={{ animation: `lineTravel2 3s ease-in-out infinite`, animationDelay: `${i * 0.4}s` }} />
-            ))}
-            <div className="w-2.5 h-2.5 rounded-full bg-gold" style={{ boxShadow: '0 0 12px rgba(200,168,76,0.5)' }} />
-            {[0,1,2].map(i => (
-              <div key={i} className="h-px w-16 bg-gradient-to-r from-border-dark via-gold/40 to-border-dark"
-                style={{ animation: `lineTravel2 3s ease-in-out infinite`, animationDelay: `${(i + 3) * 0.4}s` }} />
-            ))}
+          {/* Converging SVG Schematic Connector */}
+          <div className="w-[960px] h-[100px] relative pointer-events-none">
+            <svg className="w-full h-full" viewBox="0 0 960 100" fill="none">
+              {/* Node 1 to Core */}
+              <path d="M 96,0 C 96,65 480,35 480,100" stroke="#182E50" strokeWidth="1" />
+              <path className="flowing-line-path" d="M 96,0 C 96,65 480,35 480,100" stroke="#1860FF" strokeWidth="1.5" strokeLinecap="round" />
+
+              {/* Node 2 to Core */}
+              <path d="M 288,0 C 288,65 480,35 480,100" stroke="#182E50" strokeWidth="1" />
+              <path className="flowing-line-path" d="M 288,0 C 288,65 480,35 480,100" stroke="#1860FF" strokeWidth="1.5" strokeLinecap="round" />
+
+              {/* Node 3 to Core */}
+              <path d="M 480,0 L 480,100" stroke="#182E50" strokeWidth="1" />
+              <path className="flowing-line-path-center" d="M 480,0 L 480,100" stroke="#C8A84C" strokeWidth="1.5" strokeLinecap="round" />
+
+              {/* Node 4 to Core */}
+              <path d="M 672,0 C 672,65 480,35 480,100" stroke="#182E50" strokeWidth="1" />
+              <path className="flowing-line-path" d="M 672,0 C 672,65 480,35 480,100" stroke="#1860FF" strokeWidth="1.5" strokeLinecap="round" />
+
+              {/* Node 5 to Core */}
+              <path d="M 864,0 C 864,65 480,35 480,100" stroke="#182E50" strokeWidth="1" />
+              <path className="flowing-line-path" d="M 864,0 C 864,65 480,35 480,100" stroke="#1860FF" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
           </div>
 
-          {/* Center: ATL */}
+          {/* Central Assurance Core */}
           <div
-            className="trust-center flex flex-col items-center justify-center text-center w-48 h-48 rounded-full"
+            className="trust-center flex flex-col items-center justify-center text-center w-52 h-52 rounded-full cursor-default relative"
             style={{
               opacity: 0,
-              background: 'radial-gradient(circle, rgba(24,96,255,0.15) 0%, rgba(6,16,31,0.9) 70%)',
-              border: '2px solid rgba(200,168,76,0.4)',
-              boxShadow: '0 0 40px rgba(200,168,76,0.15), inset 0 0 40px rgba(24,96,255,0.1)',
-            }}>
-            <div className="font-display text-gold text-xl leading-tight tracking-[0.03em]">Autonomy</div>
-            <div className="font-display text-gold text-xl leading-tight tracking-[0.03em]">Trust Labs</div>
-            <div className="font-mono text-[0.55rem] tracking-[0.1em] uppercase text-text-on-dark-muted mt-2">
+              background: 'radial-gradient(circle, rgba(24,96,255,0.08) 0%, rgba(6,16,31,0.92) 80%)',
+              border: '1.5px solid rgba(200,168,76,0.48)',
+              boxShadow: '0 0 35px rgba(200,168,76,0.12), inset 0 0 25px rgba(24,96,255,0.15)',
+              transition: 'transform 0.4s ease-out',
+            }}
+            onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
+            onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+          >
+            <div className="font-display text-gold text-2xl leading-none mb-1 tracking-[0.04em] uppercase">Autonomy</div>
+            <div className="font-display text-gold text-2xl leading-none mb-2.5 tracking-[0.04em] uppercase">Trust Labs</div>
+            <div className="font-mono text-[0.55rem] tracking-[0.14em] uppercase text-text-on-dark-muted">
               Trust Infrastructure
             </div>
           </div>
 
-          {/* Arrow down */}
-          <div className="flex flex-col items-center gap-1">
-            {[0,1,2].map(i => (
-              <div key={i} className="w-px h-6 bg-gradient-to-b from-gold/40 to-transparent" />
-            ))}
-            <div className="text-gold text-xl">↓</div>
+          {/* Downward Connector */}
+          <div className="py-2 pointer-events-none">
+            <svg className="w-16 h-20 text-gold" viewBox="0 0 100 80" fill="none">
+              <path d="M 50,0 L 50,70" stroke="#182E50" strokeWidth="1.5" strokeDasharray="5 5" />
+              <path d="M 45,62 L 50,70 L 55,62" stroke="#C8A84C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              <path className="flowing-dash-down" d="M 50,0 L 50,70" stroke="#C8A84C" strokeWidth="2" strokeLinecap="round" />
+            </svg>
           </div>
 
-          {/* Outcome */}
+          {/* Final Outcome Card */}
           <div
-            className="trust-outcome flex items-center gap-3 px-8 py-4 rounded-sm"
+            className="trust-outcome flex items-center gap-4 px-10 py-5 rounded-sm cursor-default"
             style={{
               opacity: 0,
-              background: 'rgba(200,168,76,0.08)',
-              border: '1px solid rgba(200,168,76,0.3)',
-            }}>
-            <span className="text-2xl">✓</span>
+              background: 'rgba(200, 168, 76, 0.02)',
+              border: '1px solid rgba(200, 168, 76, 0.28)',
+              boxShadow: '0 4px 20px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.02)',
+            }}
+          >
+            <svg className="w-6 h-6 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 11 2 2 4-4" />
+            </svg>
             <div>
-              <div className="font-display text-white text-xl tracking-[0.03em]">Trusted Deployment</div>
-              <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-gold-light mt-0.5">
+              <div className="font-display text-white text-xl tracking-[0.03em] uppercase">Trusted Deployment</div>
+              <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-gold-light mt-1">
                 Safe · Secure · Certifiable · Scalable
               </div>
             </div>
           </div>
         </div>
+
+        {/* Mobile View Layout (Vertical Stacking) */}
+        <div className="flex md:hidden flex-col items-center gap-6">
+          {/* Stacked Nodes Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 w-full">
+            {NODES.map(n => (
+              <div key={n.label}
+                className="trust-node flex items-center gap-3 px-5 py-4 rounded-sm"
+                style={{
+                  opacity: 0,
+                  background: 'rgba(255, 255, 255, 0.02)',
+                  border: `1px solid ${n.color}22`,
+                }}
+              >
+                {n.icon}
+                <span className="font-mono text-[0.8rem] text-white">{n.label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Simple Mobile Down Arrow */}
+          <div className="text-blue text-xl animate-bounce">↓</div>
+
+          {/* Core */}
+          <div
+            className="trust-center flex flex-col items-center justify-center text-center w-40 h-40 rounded-full"
+            style={{
+              opacity: 0,
+              background: 'radial-gradient(circle, rgba(24,96,255,0.08) 0%, rgba(6,16,31,0.92) 80%)',
+              border: '1.5px solid rgba(200,168,76,0.4)',
+            }}
+          >
+            <div className="font-display text-gold text-lg leading-tight uppercase">Autonomy</div>
+            <div className="font-display text-gold text-lg leading-tight uppercase">Trust Labs</div>
+          </div>
+
+          {/* Simple Mobile Down Arrow */}
+          <div className="text-gold text-xl animate-bounce">↓</div>
+
+          {/* Outcome Card */}
+          <div
+            className="trust-outcome flex items-center gap-3.5 px-6 py-4 rounded-sm w-full"
+            style={{
+              opacity: 0,
+              background: 'rgba(200, 168, 76, 0.02)',
+              border: '1px solid rgba(200, 168, 76, 0.22)',
+            }}
+          >
+            <svg className="w-5 h-5 text-gold flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="m9 11 2 2 4-4" />
+            </svg>
+            <div>
+              <div className="font-display text-white text-md tracking-[0.03em] uppercase">Trusted Deployment</div>
+              <div className="font-mono text-[0.58rem] tracking-[0.1em] uppercase text-gold-light mt-0.5">
+                Safe · Secure · Certifiable · Scalable
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <style>{`
-        @keyframes lineTravel2 {
-          0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; }
+        @keyframes strokeFlow {
+          0% { stroke-dashoffset: 120; }
+          100% { stroke-dashoffset: 0; }
+        }
+        .flowing-line-path {
+          stroke-dasharray: 18 54;
+          animation: strokeFlow 3.5s linear infinite;
+        }
+        .flowing-line-path-center {
+          stroke-dasharray: 12 36;
+          animation: strokeFlow 2.5s linear infinite;
+        }
+        @keyframes pulseFlow {
+          0% { stroke-dashoffset: 80; }
+          100% { stroke-dashoffset: 0; }
+        }
+        .flowing-dash-down {
+          stroke-dasharray: 8 24;
+          animation: pulseFlow 1.6s linear infinite;
         }
       `}</style>
     </section>

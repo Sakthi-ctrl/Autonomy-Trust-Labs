@@ -93,33 +93,6 @@ export default function HeroSection({ isReady = true }: HeroSectionProps) {
           </div>
         </div>
 
-        {/* Right: stats */}
-        <div ref={statsRef} className="flex flex-col gap-0.5 flex-shrink-0" style={{ opacity: 0 }}>
-          <div className="flex gap-0.5">
-            {[
-              { val: '6+', lbl: 'Platform Products' },
-              { val: '12+', lbl: 'Industry Verticals' },
-            ].map(s => (
-              <div key={s.lbl} className="px-7 py-5 min-w-[130px]"
-                style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid #182E50' }}>
-                <div className="font-display text-white text-[2rem] leading-none mb-1.5 tracking-[0.03em]">{s.val}</div>
-                <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-text-on-dark-muted">{s.lbl}</div>
-              </div>
-            ))}
-          </div>
-          <div className="flex gap-0.5">
-            {[
-              { val: '8', lbl: 'Partner Segments' },
-              { val: 'E2E', lbl: 'Lifecycle Coverage' },
-            ].map(s => (
-              <div key={s.lbl} className="px-7 py-5 min-w-[130px]"
-                style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid #182E50' }}>
-                <div className="font-display font-bold text-white text-[1.75rem] leading-none mb-1.5">{s.val}</div>
-                <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase text-text-on-dark-muted">{s.lbl}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <style>{`
