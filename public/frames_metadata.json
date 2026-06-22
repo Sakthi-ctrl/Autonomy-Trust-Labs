@@ -1,0 +1,1157 @@
+[
+  {
+    "frame": 1,
+    "original": "frame_001.png",
+    "optimized": "frame_001.webp",
+    "corners": {
+      "topLeft": "#75777d",
+      "topRight": "#3a465a",
+      "bottomLeft": "#253143",
+      "bottomRight": "#24354c"
+    }
+  },
+  {
+    "frame": 2,
+    "original": "frame_002.png",
+    "optimized": "frame_002.webp",
+    "corners": {
+      "topLeft": "#7d7c83",
+      "topRight": "#3c485c",
+      "bottomLeft": "#283546",
+      "bottomRight": "#1c2a40"
+    }
+  },
+  {
+    "frame": 3,
+    "original": "frame_003.png",
+    "optimized": "frame_003.webp",
+    "corners": {
+      "topLeft": "#838085",
+      "topRight": "#3d4b5e",
+      "bottomLeft": "#2e374a",
+      "bottomRight": "#121c27"
+    }
+  },
+  {
+    "frame": 4,
+    "original": "frame_004.png",
+    "optimized": "frame_004.webp",
+    "corners": {
+      "topLeft": "#89848a",
+      "topRight": "#3e4c60",
+      "bottomLeft": "#303a4a",
+      "bottomRight": "#141e2c"
+    }
+  },
+  {
+    "frame": 5,
+    "original": "frame_005.png",
+    "optimized": "frame_005.webp",
+    "corners": {
+      "topLeft": "#8e898d",
+      "topRight": "#3f4d61",
+      "bottomLeft": "#343e4d",
+      "bottomRight": "#182230"
+    }
+  },
+  {
+    "frame": 6,
+    "original": "frame_006.png",
+    "optimized": "frame_006.webp",
+    "corners": {
+      "topLeft": "#8e898d",
+      "topRight": "#404e64",
+      "bottomLeft": "#394053",
+      "bottomRight": "#1b2734"
+    }
+  },
+  {
+    "frame": 7,
+    "original": "frame_007.png",
+    "optimized": "frame_007.webp",
+    "corners": {
+      "topLeft": "#8e898d",
+      "topRight": "#404e64",
+      "bottomLeft": "#3b4355",
+      "bottomRight": "#263244"
+    }
+  },
+  {
+    "frame": 8,
+    "original": "frame_008.png",
+    "optimized": "frame_008.webp",
+    "corners": {
+      "topLeft": "#8e898d",
+      "topRight": "#404e64",
+      "bottomLeft": "#3e4558",
+      "bottomRight": "#293343"
+    }
+  },
+  {
+    "frame": 9,
+    "original": "frame_009.png",
+    "optimized": "frame_009.webp",
+    "corners": {
+      "topLeft": "#8c8a8d",
+      "topRight": "#3f4f64",
+      "bottomLeft": "#3c4454",
+      "bottomRight": "#273345"
+    }
+  },
+  {
+    "frame": 10,
+    "original": "frame_010.png",
+    "optimized": "frame_010.webp",
+    "corners": {
+      "topLeft": "#8f8a8e",
+      "topRight": "#435166",
+      "bottomLeft": "#454c5d",
+      "bottomRight": "#2b3749"
+    }
+  },
+  {
+    "frame": 11,
+    "original": "frame_011.png",
+    "optimized": "frame_011.webp",
+    "corners": {
+      "topLeft": "#8f8b8c",
+      "topRight": "#435166",
+      "bottomLeft": "#4b5361",
+      "bottomRight": "#2d394b"
+    }
+  },
+  {
+    "frame": 12,
+    "original": "frame_012.png",
+    "optimized": "frame_012.webp",
+    "corners": {
+      "topLeft": "#918a8c",
+      "topRight": "#435166",
+      "bottomLeft": "#404e62",
+      "bottomRight": "#2f3b4d"
+    }
+  },
+  {
+    "frame": 13,
+    "original": "frame_013.png",
+    "optimized": "frame_013.webp",
+    "corners": {
+      "topLeft": "#918a8c",
+      "topRight": "#415166",
+      "bottomLeft": "#3c5167",
+      "bottomRight": "#313d4e"
+    }
+  },
+  {
+    "frame": 14,
+    "original": "frame_014.png",
+    "optimized": "frame_014.webp",
+    "corners": {
+      "topLeft": "#918a8c",
+      "topRight": "#435166",
+      "bottomLeft": "#3f5266",
+      "bottomRight": "#313b4d"
+    }
+  },
+  {
+    "frame": 15,
+    "original": "frame_015.png",
+    "optimized": "frame_015.webp",
+    "corners": {
+      "topLeft": "#90898b",
+      "topRight": "#435166",
+      "bottomLeft": "#475a71",
+      "bottomRight": "#343d4d"
+    }
+  },
+  {
+    "frame": 16,
+    "original": "frame_016.png",
+    "optimized": "frame_016.webp",
+    "corners": {
+      "topLeft": "#90898b",
+      "topRight": "#435166",
+      "bottomLeft": "#565d71",
+      "bottomRight": "#39414d"
+    }
+  },
+  {
+    "frame": 17,
+    "original": "frame_017.png",
+    "optimized": "frame_017.webp",
+    "corners": {
+      "topLeft": "#8f8887",
+      "topRight": "#415063",
+      "bottomLeft": "#62616a",
+      "bottomRight": "#38404e"
+    }
+  },
+  {
+    "frame": 18,
+    "original": "frame_018.png",
+    "optimized": "frame_018.webp",
+    "corners": {
+      "topLeft": "#928988",
+      "topRight": "#434f63",
+      "bottomLeft": "#776d72",
+      "bottomRight": "#40424f"
+    }
+  },
+  {
+    "frame": 19,
+    "original": "frame_019.png",
+    "optimized": "frame_019.webp",
+    "corners": {
+      "topLeft": "#938a8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#7c7173",
+      "bottomRight": "#49464f"
+    }
+  },
+  {
+    "frame": 20,
+    "original": "frame_020.png",
+    "optimized": "frame_020.webp",
+    "corners": {
+      "topLeft": "#938a8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#988484",
+      "bottomRight": "#524b51"
+    }
+  },
+  {
+    "frame": 21,
+    "original": "frame_021.png",
+    "optimized": "frame_021.webp",
+    "corners": {
+      "topLeft": "#938a8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#80706d",
+      "bottomRight": "#5a4f52"
+    }
+  },
+  {
+    "frame": 22,
+    "original": "frame_022.png",
+    "optimized": "frame_022.webp",
+    "corners": {
+      "topLeft": "#938a8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#887879",
+      "bottomRight": "#655556"
+    }
+  },
+  {
+    "frame": 23,
+    "original": "frame_023.png",
+    "optimized": "frame_023.webp",
+    "corners": {
+      "topLeft": "#968a8b",
+      "topRight": "#454f63",
+      "bottomLeft": "#8b7d7d",
+      "bottomRight": "#655554"
+    }
+  },
+  {
+    "frame": 24,
+    "original": "frame_024.png",
+    "optimized": "frame_024.webp",
+    "corners": {
+      "topLeft": "#968a8b",
+      "topRight": "#454f63",
+      "bottomLeft": "#847979",
+      "bottomRight": "#655552"
+    }
+  },
+  {
+    "frame": 25,
+    "original": "frame_025.png",
+    "optimized": "frame_025.webp",
+    "corners": {
+      "topLeft": "#968a8b",
+      "topRight": "#434f63",
+      "bottomLeft": "#847979",
+      "bottomRight": "#685651"
+    }
+  },
+  {
+    "frame": 26,
+    "original": "frame_026.png",
+    "optimized": "frame_026.webp",
+    "corners": {
+      "topLeft": "#978c8c",
+      "topRight": "#434f63",
+      "bottomLeft": "#887c7f",
+      "bottomRight": "#6d5955"
+    }
+  },
+  {
+    "frame": 27,
+    "original": "frame_027.png",
+    "optimized": "frame_027.webp",
+    "corners": {
+      "topLeft": "#968b89",
+      "topRight": "#404e62",
+      "bottomLeft": "#897d80",
+      "bottomRight": "#715b57"
+    }
+  },
+  {
+    "frame": 28,
+    "original": "frame_028.png",
+    "optimized": "frame_028.webp",
+    "corners": {
+      "topLeft": "#968b89",
+      "topRight": "#404e62",
+      "bottomLeft": "#8b8080",
+      "bottomRight": "#725e59"
+    }
+  },
+  {
+    "frame": 29,
+    "original": "frame_029.png",
+    "optimized": "frame_029.webp",
+    "corners": {
+      "topLeft": "#9a8d89",
+      "topRight": "#424e62",
+      "bottomLeft": "#8b8082",
+      "bottomRight": "#755f58"
+    }
+  },
+  {
+    "frame": 30,
+    "original": "frame_030.png",
+    "optimized": "frame_030.webp",
+    "corners": {
+      "topLeft": "#9b8e8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#8f8688",
+      "bottomRight": "#7d635b"
+    }
+  },
+  {
+    "frame": 31,
+    "original": "frame_031.png",
+    "optimized": "frame_031.webp",
+    "corners": {
+      "topLeft": "#9b8e8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#8e8584",
+      "bottomRight": "#796159"
+    }
+  },
+  {
+    "frame": 32,
+    "original": "frame_032.png",
+    "optimized": "frame_032.webp",
+    "corners": {
+      "topLeft": "#9b8e8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#d4d0ce",
+      "bottomRight": "#7e645a"
+    }
+  },
+  {
+    "frame": 33,
+    "original": "frame_033.png",
+    "optimized": "frame_033.webp",
+    "corners": {
+      "topLeft": "#9b8e8a",
+      "topRight": "#415063",
+      "bottomLeft": "#f2f0ec",
+      "bottomRight": "#937565"
+    }
+  },
+  {
+    "frame": 34,
+    "original": "frame_034.png",
+    "optimized": "frame_034.webp",
+    "corners": {
+      "topLeft": "#9d8d8a",
+      "topRight": "#434f63",
+      "bottomLeft": "#f7efe6",
+      "bottomRight": "#8e6f5f"
+    }
+  },
+  {
+    "frame": 35,
+    "original": "frame_035.png",
+    "optimized": "frame_035.webp",
+    "corners": {
+      "topLeft": "#9f8d88",
+      "topRight": "#434f63",
+      "bottomLeft": "#cdbeb9",
+      "bottomRight": "#937261"
+    }
+  },
+  {
+    "frame": 36,
+    "original": "frame_036.png",
+    "optimized": "frame_036.webp",
+    "corners": {
+      "topLeft": "#a08e8b",
+      "topRight": "#434f63",
+      "bottomLeft": "#aeacaf",
+      "bottomRight": "#967664"
+    }
+  },
+  {
+    "frame": 37,
+    "original": "frame_037.png",
+    "optimized": "frame_037.webp",
+    "corners": {
+      "topLeft": "#a18f8c",
+      "topRight": "#434f63",
+      "bottomLeft": "#96969c",
+      "bottomRight": "#937563"
+    }
+  },
+  {
+    "frame": 38,
+    "original": "frame_038.png",
+    "optimized": "frame_038.webp",
+    "corners": {
+      "topLeft": "#9f8b87",
+      "topRight": "#434f63",
+      "bottomLeft": "#253747",
+      "bottomRight": "#8e6f5f"
+    }
+  },
+  {
+    "frame": 39,
+    "original": "frame_039.png",
+    "optimized": "frame_039.webp",
+    "corners": {
+      "topLeft": "#9f8b87",
+      "topRight": "#434f61",
+      "bottomLeft": "#1e3345",
+      "bottomRight": "#866a59"
+    }
+  },
+  {
+    "frame": 40,
+    "original": "frame_040.png",
+    "optimized": "frame_040.webp",
+    "corners": {
+      "topLeft": "#a18c88",
+      "topRight": "#434f61",
+      "bottomLeft": "#20374a",
+      "bottomRight": "#786053"
+    }
+  },
+  {
+    "frame": 41,
+    "original": "frame_041.png",
+    "optimized": "frame_041.webp",
+    "corners": {
+      "topLeft": "#a28e89",
+      "topRight": "#404e62",
+      "bottomLeft": "#203548",
+      "bottomRight": "#786053"
+    }
+  },
+  {
+    "frame": 42,
+    "original": "frame_042.png",
+    "optimized": "frame_042.webp",
+    "corners": {
+      "topLeft": "#a38f8a",
+      "topRight": "#415063",
+      "bottomLeft": "#1a2f46",
+      "bottomRight": "#745e56"
+    }
+  },
+  {
+    "frame": 43,
+    "original": "frame_043.png",
+    "optimized": "frame_043.webp",
+    "corners": {
+      "topLeft": "#a4908b",
+      "topRight": "#455367",
+      "bottomLeft": "#132b43",
+      "bottomRight": "#463635"
+    }
+  },
+  {
+    "frame": 44,
+    "original": "frame_044.png",
+    "optimized": "frame_044.webp",
+    "corners": {
+      "topLeft": "#a5918d",
+      "topRight": "#455367",
+      "bottomLeft": "#152c44",
+      "bottomRight": "#2a2930"
+    }
+  },
+  {
+    "frame": 45,
+    "original": "frame_045.png",
+    "optimized": "frame_045.webp",
+    "corners": {
+      "topLeft": "#a5938e",
+      "topRight": "#455367",
+      "bottomLeft": "#152c44",
+      "bottomRight": "#161e26"
+    }
+  },
+  {
+    "frame": 46,
+    "original": "frame_046.png",
+    "optimized": "frame_046.webp",
+    "corners": {
+      "topLeft": "#a6948f",
+      "topRight": "#465263",
+      "bottomLeft": "#0f2b42",
+      "bottomRight": "#09131d"
+    }
+  },
+  {
+    "frame": 47,
+    "original": "frame_047.png",
+    "optimized": "frame_047.webp",
+    "corners": {
+      "topLeft": "#a79590",
+      "topRight": "#465263",
+      "bottomLeft": "#102c43",
+      "bottomRight": "#0e1a25"
+    }
+  },
+  {
+    "frame": 48,
+    "original": "frame_048.png",
+    "optimized": "frame_048.webp",
+    "corners": {
+      "topLeft": "#a79590",
+      "topRight": "#465263",
+      "bottomLeft": "#102c43",
+      "bottomRight": "#1e3146"
+    }
+  },
+  {
+    "frame": 49,
+    "original": "frame_049.png",
+    "optimized": "frame_049.webp",
+    "corners": {
+      "topLeft": "#eef1ee",
+      "topRight": "#182128",
+      "bottomLeft": "#33434b",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 50,
+    "original": "frame_050.png",
+    "optimized": "frame_050.webp",
+    "corners": {
+      "topLeft": "#eef1ee",
+      "topRight": "#192229",
+      "bottomLeft": "#35444e",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 51,
+    "original": "frame_051.png",
+    "optimized": "frame_051.webp",
+    "corners": {
+      "topLeft": "#edefed",
+      "topRight": "#192229",
+      "bottomLeft": "#33424d",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 52,
+    "original": "frame_052.png",
+    "optimized": "frame_052.webp",
+    "corners": {
+      "topLeft": "#edefed",
+      "topRight": "#1b232a",
+      "bottomLeft": "#324249",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 53,
+    "original": "frame_053.png",
+    "optimized": "frame_053.webp",
+    "corners": {
+      "topLeft": "#eceee9",
+      "topRight": "#1b232a",
+      "bottomLeft": "#303f47",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 54,
+    "original": "frame_054.png",
+    "optimized": "frame_054.webp",
+    "corners": {
+      "topLeft": "#edefed",
+      "topRight": "#1b232a",
+      "bottomLeft": "#303f47",
+      "bottomRight": "#395161"
+    }
+  },
+  {
+    "frame": 55,
+    "original": "frame_055.png",
+    "optimized": "frame_055.webp",
+    "corners": {
+      "topLeft": "#edefed",
+      "topRight": "#1b232a",
+      "bottomLeft": "#303f47",
+      "bottomRight": "#395160"
+    }
+  },
+  {
+    "frame": 56,
+    "original": "frame_056.png",
+    "optimized": "frame_056.webp",
+    "corners": {
+      "topLeft": "#eef1ee",
+      "topRight": "#1b232a",
+      "bottomLeft": "#303f47",
+      "bottomRight": "#384f60"
+    }
+  },
+  {
+    "frame": 57,
+    "original": "frame_057.png",
+    "optimized": "frame_057.webp",
+    "corners": {
+      "topLeft": "#ecf1ee",
+      "topRight": "#1b232a",
+      "bottomLeft": "#2f3e46",
+      "bottomRight": "#3a5263"
+    }
+  },
+  {
+    "frame": 58,
+    "original": "frame_058.png",
+    "optimized": "frame_058.webp",
+    "corners": {
+      "topLeft": "#ecf1f0",
+      "topRight": "#1b232a",
+      "bottomLeft": "#303f47",
+      "bottomRight": "#395163"
+    }
+  },
+  {
+    "frame": 59,
+    "original": "frame_059.png",
+    "optimized": "frame_059.webp",
+    "corners": {
+      "topLeft": "#ebf0ef",
+      "topRight": "#192229",
+      "bottomLeft": "#2f3e46",
+      "bottomRight": "#384f61"
+    }
+  },
+  {
+    "frame": 60,
+    "original": "frame_060.png",
+    "optimized": "frame_060.webp",
+    "corners": {
+      "topLeft": "#ebf0ef",
+      "topRight": "#192229",
+      "bottomLeft": "#2a3941",
+      "bottomRight": "#395162"
+    }
+  },
+  {
+    "frame": 61,
+    "original": "frame_061.png",
+    "optimized": "frame_061.webp",
+    "corners": {
+      "topLeft": "#ebf0ef",
+      "topRight": "#172027",
+      "bottomLeft": "#2d3c44",
+      "bottomRight": "#395162"
+    }
+  },
+  {
+    "frame": 62,
+    "original": "frame_062.png",
+    "optimized": "frame_062.webp",
+    "corners": {
+      "topLeft": "#ecf1f0",
+      "topRight": "#172027",
+      "bottomLeft": "#091219",
+      "bottomRight": "#395162"
+    }
+  },
+  {
+    "frame": 63,
+    "original": "frame_063.png",
+    "optimized": "frame_063.webp",
+    "corners": {
+      "topLeft": "#ecf1f0",
+      "topRight": "#172027",
+      "bottomLeft": "#060c14",
+      "bottomRight": "#395162"
+    }
+  },
+  {
+    "frame": 64,
+    "original": "frame_064.png",
+    "optimized": "frame_064.webp",
+    "corners": {
+      "topLeft": "#ecf3f1",
+      "topRight": "#172027",
+      "bottomLeft": "#0a1318",
+      "bottomRight": "#3a5263"
+    }
+  },
+  {
+    "frame": 65,
+    "original": "frame_065.png",
+    "optimized": "frame_065.webp",
+    "corners": {
+      "topLeft": "#ecf3f1",
+      "topRight": "#172027",
+      "bottomLeft": "#02080d",
+      "bottomRight": "#3a5263"
+    }
+  },
+  {
+    "frame": 66,
+    "original": "frame_066.png",
+    "optimized": "frame_066.webp",
+    "corners": {
+      "topLeft": "#e9f0ef",
+      "topRight": "#182128",
+      "bottomLeft": "#27343b",
+      "bottomRight": "#3a5265"
+    }
+  },
+  {
+    "frame": 67,
+    "original": "frame_067.png",
+    "optimized": "frame_067.webp",
+    "corners": {
+      "topLeft": "#e6edeb",
+      "topRight": "#182229",
+      "bottomLeft": "#1c292f",
+      "bottomRight": "#3a5265"
+    }
+  },
+  {
+    "frame": 68,
+    "original": "frame_068.png",
+    "optimized": "frame_068.webp",
+    "corners": {
+      "topLeft": "#dde6e4",
+      "topRight": "#182229",
+      "bottomLeft": "#111a1f",
+      "bottomRight": "#395160"
+    }
+  },
+  {
+    "frame": 69,
+    "original": "frame_069.png",
+    "optimized": "frame_069.webp",
+    "corners": {
+      "topLeft": "#dde6e4",
+      "topRight": "#182229",
+      "bottomLeft": "#0f181c",
+      "bottomRight": "#3a5265"
+    }
+  },
+  {
+    "frame": 70,
+    "original": "frame_070.png",
+    "optimized": "frame_070.webp",
+    "corners": {
+      "topLeft": "#dbe4e2",
+      "topRight": "#1b232a",
+      "bottomLeft": "#070e13",
+      "bottomRight": "#3a5265"
+    }
+  },
+  {
+    "frame": 71,
+    "original": "frame_071.png",
+    "optimized": "frame_071.webp",
+    "corners": {
+      "topLeft": "#d0d6d7",
+      "topRight": "#1c242b",
+      "bottomLeft": "#080c10",
+      "bottomRight": "#3b5366"
+    }
+  },
+  {
+    "frame": 72,
+    "original": "frame_072.png",
+    "optimized": "frame_072.webp",
+    "corners": {
+      "topLeft": "#939c9a",
+      "topRight": "#1c242b",
+      "bottomLeft": "#06080c",
+      "bottomRight": "#3a5265"
+    }
+  },
+  {
+    "frame": 73,
+    "original": "frame_073.png",
+    "optimized": "frame_073.webp",
+    "corners": {
+      "topLeft": "#232e30",
+      "topRight": "#1b232a",
+      "bottomLeft": "#08090e",
+      "bottomRight": "#3b5366"
+    }
+  },
+  {
+    "frame": 74,
+    "original": "frame_074.png",
+    "optimized": "frame_074.webp",
+    "corners": {
+      "topLeft": "#2c3943",
+      "topRight": "#1b232a",
+      "bottomLeft": "#08090e",
+      "bottomRight": "#3d5468"
+    }
+  },
+  {
+    "frame": 75,
+    "original": "frame_075.png",
+    "optimized": "frame_075.webp",
+    "corners": {
+      "topLeft": "#1b2734",
+      "topRight": "#1b232a",
+      "bottomLeft": "#0c1218",
+      "bottomRight": "#3d5468"
+    }
+  },
+  {
+    "frame": 76,
+    "original": "frame_076.png",
+    "optimized": "frame_076.webp",
+    "corners": {
+      "topLeft": "#14202d",
+      "topRight": "#1b232a",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#3d5468"
+    }
+  },
+  {
+    "frame": 77,
+    "original": "frame_077.png",
+    "optimized": "frame_077.webp",
+    "corners": {
+      "topLeft": "#19222b",
+      "topRight": "#182229",
+      "bottomLeft": "#090f12",
+      "bottomRight": "#3d5465"
+    }
+  },
+  {
+    "frame": 78,
+    "original": "frame_078.png",
+    "optimized": "frame_078.webp",
+    "corners": {
+      "topLeft": "#1e2022",
+      "topRight": "#1c242b",
+      "bottomLeft": "#090d11",
+      "bottomRight": "#3e5567"
+    }
+  },
+  {
+    "frame": 79,
+    "original": "frame_079.png",
+    "optimized": "frame_079.webp",
+    "corners": {
+      "topLeft": "#1c1510",
+      "topRight": "#1c242b",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#3e5567"
+    }
+  },
+  {
+    "frame": 80,
+    "original": "frame_080.png",
+    "optimized": "frame_080.webp",
+    "corners": {
+      "topLeft": "#231b13",
+      "topRight": "#1c242b",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#3d5465"
+    }
+  },
+  {
+    "frame": 81,
+    "original": "frame_081.png",
+    "optimized": "frame_081.webp",
+    "corners": {
+      "topLeft": "#231b11",
+      "topRight": "#1b232a",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#3f5667"
+    }
+  },
+  {
+    "frame": 82,
+    "original": "frame_082.png",
+    "optimized": "frame_082.webp",
+    "corners": {
+      "topLeft": "#271b09",
+      "topRight": "#1c242b",
+      "bottomLeft": "#0f1015",
+      "bottomRight": "#405664"
+    }
+  },
+  {
+    "frame": 83,
+    "original": "frame_083.png",
+    "optimized": "frame_083.webp",
+    "corners": {
+      "topLeft": "#362815",
+      "topRight": "#1c242b",
+      "bottomLeft": "#090b0f",
+      "bottomRight": "#405664"
+    }
+  },
+  {
+    "frame": 84,
+    "original": "frame_084.png",
+    "optimized": "frame_084.webp",
+    "corners": {
+      "topLeft": "#171916",
+      "topRight": "#1c242b",
+      "bottomLeft": "#0c0e12",
+      "bottomRight": "#3e5662"
+    }
+  },
+  {
+    "frame": 85,
+    "original": "frame_085.png",
+    "optimized": "frame_085.webp",
+    "corners": {
+      "topLeft": "#1a2837",
+      "topRight": "#202930",
+      "bottomLeft": "#0e1e23",
+      "bottomRight": "#3e545f"
+    }
+  },
+  {
+    "frame": 86,
+    "original": "frame_086.png",
+    "optimized": "frame_086.webp",
+    "corners": {
+      "topLeft": "#2e2c2a",
+      "topRight": "#232b32",
+      "bottomLeft": "#182731",
+      "bottomRight": "#415560"
+    }
+  },
+  {
+    "frame": 87,
+    "original": "frame_087.png",
+    "optimized": "frame_087.webp",
+    "corners": {
+      "topLeft": "#1c1512",
+      "topRight": "#242c34",
+      "bottomLeft": "#091219",
+      "bottomRight": "#405d66"
+    }
+  },
+  {
+    "frame": 88,
+    "original": "frame_088.png",
+    "optimized": "frame_088.webp",
+    "corners": {
+      "topLeft": "#241e16",
+      "topRight": "#293138",
+      "bottomLeft": "#0b141b",
+      "bottomRight": "#3f7786"
+    }
+  },
+  {
+    "frame": 89,
+    "original": "frame_089.png",
+    "optimized": "frame_089.webp",
+    "corners": {
+      "topLeft": "#2f2921",
+      "topRight": "#293138",
+      "bottomLeft": "#0d151c",
+      "bottomRight": "#48869a"
+    }
+  },
+  {
+    "frame": 90,
+    "original": "frame_090.png",
+    "optimized": "frame_090.webp",
+    "corners": {
+      "topLeft": "#383022",
+      "topRight": "#2e373e",
+      "bottomLeft": "#0e151a",
+      "bottomRight": "#4c8598"
+    }
+  },
+  {
+    "frame": 91,
+    "original": "frame_091.png",
+    "optimized": "frame_091.webp",
+    "corners": {
+      "topLeft": "#3d3121",
+      "topRight": "#2d363d",
+      "bottomLeft": "#0f1319",
+      "bottomRight": "#467787"
+    }
+  },
+  {
+    "frame": 92,
+    "original": "frame_092.png",
+    "optimized": "frame_092.webp",
+    "corners": {
+      "topLeft": "#40352a",
+      "topRight": "#2d363d",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#426979"
+    }
+  },
+  {
+    "frame": 93,
+    "original": "frame_093.png",
+    "optimized": "frame_093.webp",
+    "corners": {
+      "topLeft": "#3c3229",
+      "topRight": "#273037",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#425c6a"
+    }
+  },
+  {
+    "frame": 94,
+    "original": "frame_094.png",
+    "optimized": "frame_094.webp",
+    "corners": {
+      "topLeft": "#403122",
+      "topRight": "#273037",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#405565"
+    }
+  },
+  {
+    "frame": 95,
+    "original": "frame_095.png",
+    "optimized": "frame_095.webp",
+    "corners": {
+      "topLeft": "#3b2d1c",
+      "topRight": "#242c34",
+      "bottomLeft": "#0c1013",
+      "bottomRight": "#415565"
+    }
+  },
+  {
+    "frame": 96,
+    "original": "frame_096.png",
+    "optimized": "frame_096.webp",
+    "corners": {
+      "topLeft": "#362515",
+      "topRight": "#232b32",
+      "bottomLeft": "#0a0f12",
+      "bottomRight": "#40515f"
+    }
+  },
+  {
+    "frame": 97,
+    "original": "frame_097.png",
+    "optimized": "frame_097.webp",
+    "corners": {
+      "topLeft": "#2e1d0a",
+      "topRight": "#1d252d",
+      "bottomLeft": "#0d1417",
+      "bottomRight": "#405363"
+    }
+  },
+  {
+    "frame": 98,
+    "original": "frame_098.png",
+    "optimized": "frame_098.webp",
+    "corners": {
+      "topLeft": "#2d200f",
+      "topRight": "#1c242b",
+      "bottomLeft": "#0d1417",
+      "bottomRight": "#405361"
+    }
+  },
+  {
+    "frame": 99,
+    "original": "frame_099.png",
+    "optimized": "frame_099.webp",
+    "corners": {
+      "topLeft": "#2b251b",
+      "topRight": "#192229",
+      "bottomLeft": "#0c1011",
+      "bottomRight": "#3f5260"
+    }
+  },
+  {
+    "frame": 100,
+    "original": "frame_100.png",
+    "optimized": "frame_100.webp",
+    "corners": {
+      "topLeft": "#221d20",
+      "topRight": "#192229",
+      "bottomLeft": "#0d1110",
+      "bottomRight": "#3c525f"
+    }
+  },
+  {
+    "frame": 101,
+    "original": "frame_103.png",
+    "optimized": "frame_103.webp",
+    "corners": {
+      "topLeft": "#0f171f",
+      "topRight": "#192229",
+      "bottomLeft": "#33434b",
+      "bottomRight": "#3e5161"
+    }
+  },
+  {
+    "frame": 102,
+    "original": "frame_104.png",
+    "optimized": "frame_104.webp",
+    "corners": {
+      "topLeft": "#0b141b",
+      "topRight": "#1b232a",
+      "bottomLeft": "#212c34",
+      "bottomRight": "#3e515f"
+    }
+  },
+  {
+    "frame": 103,
+    "original": "frame_105.png",
+    "optimized": "frame_105.webp",
+    "corners": {
+      "topLeft": "#11171f",
+      "topRight": "#1b232a",
+      "bottomLeft": "#0d0f13",
+      "bottomRight": "#3d505e"
+    }
+  },
+  {
+    "frame": 104,
+    "original": "frame_109.png",
+    "optimized": "frame_109.webp",
+    "corners": {
+      "topLeft": "#b49f7b",
+      "topRight": "#1f2932",
+      "bottomLeft": "#473328",
+      "bottomRight": "#444240"
+    }
+  },
+  {
+    "frame": 105,
+    "original": "frame_110.png",
+    "optimized": "frame_110.webp",
+    "corners": {
+      "topLeft": "#b49f7b",
+      "topRight": "#1f2932",
+      "bottomLeft": "#59483e",
+      "bottomRight": "#444240"
+    }
+  }
+]

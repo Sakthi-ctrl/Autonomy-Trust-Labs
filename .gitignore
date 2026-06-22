@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large assets and raw media folders
+*.mp4
+*.zip
+Autonomous_systems_and_Physical_AI_202606221632_frames/
+ChatGPT Image Jun 22, 2026, 04_33_03 PM.png
+autonomy-trust-labs.html
+/Logo.png

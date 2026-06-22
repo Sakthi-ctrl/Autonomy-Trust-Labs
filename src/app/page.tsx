@@ -1,65 +1,155 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { useEffect, useRef, useState, useCallback } from 'react';
+import dynamic from 'next/dynamic';
+
+import Navbar      from './components/Navbar';
+import Preloader   from './components/Preloader';
+import HeroSection from './components/HeroSection';
+import {
+  Section1Reveal,
+  Section2Capabilities,
+  Section3TrustLayer,
+  Section4Lifecycle,
+  Section5Industries,
+} from './components/ScrollSections';
+import SolutionsSection from './components/SolutionsSection';
+import FinalSection     from './components/FinalSection';
+
+const CanvasAnimation = dynamic(
+  () => import('./components/CanvasAnimation'),
+  { ssr: false }
+);
+
+export default function HomePage() {
+  const [loadPct,          setLoadPct]          = useState(0);
+  const [preloaderVisible, setPreloaderVisible] = useState(true);
+  const [scrollProgress,   setScrollProgress]   = useState(0);
+
+  const heroRef  = useRef<HTMLDivElement>(null);
+  const lenisRef = useRef<import('lenis').default | null>(null);
+  const rafRef   = useRef<number | null>(null);
+
+  /* ── frame loading ─────────────────────────────── */
+  const handleLoaded = useCallback((pct: number) => {
+    setLoadPct(pct);
+    if (pct >= 100) setTimeout(() => setPreloaderVisible(false), 700);
+  }, []);
+
+  // Fallback: force hide preloader after 4 seconds to ensure website is accessible
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      setLoadPct(100);
+      setPreloaderVisible(false);
+    }, 4000);
+    return () => clearTimeout(fallbackTimer);
+  }, []);
+
+  /* ── Lenis smooth scroll ────────────────────────── */
+  useEffect(() => {
+    let lenis: import('lenis').default;
+    (async () => {
+      const { default: Lenis } = await import('lenis');
+      lenis = new Lenis({
+        duration: 1.2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
+      lenisRef.current = lenis;
+      const raf = (time: number) => { lenis.raf(time); rafRef.current = requestAnimationFrame(raf); };
+      rafRef.current = requestAnimationFrame(raf);
+    })();
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      lenisRef.current?.destroy();
+    };
+  }, []);
+
+  /* ── Scroll progress → hero section only ──────────
+     Canvas animation plays only while hero is on screen.
+     Once scrolled past hero bottom, progress locks at 1.
+  ─────────────────────────────────────────────────── */
+  useEffect(() => {
+    const onScroll = () => {
+      const hero = heroRef.current;
+      if (!hero) return;
+      const heroH = hero.offsetHeight;         // hero section height (≈ 100vh)
+      const scrollY = window.scrollY;
+      // Map 0..heroH → 0..1
+      const p = Math.min(scrollY / heroH, 1);
+      setScrollProgress(p);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      {/* Preloader */}
+      <Preloader percent={loadPct} visible={preloaderVisible} />
+
+      {/* ── Fixed full-screen canvas layer ─────────── */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: 'none',
+          // Background colour that perfectly matches the first frame
+          backgroundColor: '#787680',
+        }}
+      >
+        <CanvasAnimation scrollProgress={scrollProgress} onLoaded={handleLoaded} />
+
+        {/* Dark left-side gradient for hero text readability */}
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'linear-gradient(105deg, rgba(6,16,31,0.82) 0%, rgba(6,16,31,0.45) 45%, rgba(6,16,31,0.0) 75%)',
+            pointerEvents: 'none',
+          }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+        {/* Bottom gradient — blends into hero bottom / lifecycle bar */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: '18%',
+            background:
+              'linear-gradient(to bottom, transparent 0%, rgba(6,16,31,0.4) 50%, rgba(6,16,31,0.92) 100%)',
+            pointerEvents: 'none',
+          }}
+        />
+      </div>
+
+      {/* Sticky navigation */}
+      <Navbar />
+
+      {/* ── Scrollable content ──────────────────────── */}
+      <main style={{ position: 'relative', zIndex: 1 }}>
+
+        {/* HERO — transparent so canvas shows through */}
+        <div ref={heroRef}>
+          <HeroSection isReady={!preloaderVisible} />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+
+        {/* Scroll storytelling — each section has its own solid/semi bg */}
+        <Section1Reveal />
+        <Section2Capabilities />
+        <Section3TrustLayer />
+        <Section4Lifecycle />
+        <Section5Industries />
+        <SolutionsSection />
+
+        {/* Light corporate sections + footer */}
+        <FinalSection />
       </main>
-    </div>
+    </>
   );
 }
