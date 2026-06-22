@@ -1,7 +1,13 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import Image from 'next/image';
+import { Belanosima } from 'next/font/google';
+
+const belanosima = Belanosima({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const CONTACT_TYPES = [
   'Partnership Inquiries',
@@ -13,7 +19,7 @@ const CONTACT_TYPES = [
 ];
 
 const FOOTER_LINKS = {
-  Company:  ['About ATL','Solutions','Industries','Partners'],
+  Company:  ['About ATL','Platform','Industries','Partners'],
   Connect:  ['Contact Us', 'LinkedIn', 'Twitter'],
 };
 
@@ -224,14 +230,10 @@ export default function FinalSection() {
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-14 mb-12">
             {/* Brand */}
             <div>
-              <div className="mb-6">
-                <Image
-                  src="/Logo.png"
-                  alt="Autonomy Trust Labs"
-                  width={220}
-                  height={56}
-                  style={{ width: 'auto', height: 56, objectFit: 'contain' }}
-                />
+              <div className="mb-6 flex items-center">
+                <span className={belanosima.className} style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.01em' }}>
+                  Autonomy Trust <span style={{ fontWeight: 400, color: '#C8A84C' }}>Labs</span>
+                </span>
               </div>
               <div className="font-mono text-[0.62rem] tracking-[0.1em] uppercase mb-3.5"
                 style={{ color: 'rgba(255,255,255,0.48)' }}>

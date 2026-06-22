@@ -1,11 +1,16 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import { Belanosima } from 'next/font/google';
+
+const belanosima = Belanosima({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const NAV_LINKS = [
-  { label: 'About',      href: '#about'      },
-  { label: 'Solutions',  href: '#solutions'  },
+  { label: 'Platform',   href: '#solutions'  },
   { label: 'Industries', href: '#industries' },
   { label: 'Partners',   href: '#partners'   },
 ];
@@ -49,14 +54,9 @@ export default function Navbar() {
           onClick={(e) => { e.preventDefault(); scrollTo('#home'); }}
           style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
         >
-          <Image
-            src="/Logo.png"
-            alt="Autonomy Trust Labs"
-            width={200}
-            height={52}
-            style={{ width: 'auto', height: 48, objectFit: 'contain' }}
-            priority
-          />
+          <span className={belanosima.className} style={{ fontSize: '1.45rem', fontWeight: 700, color: '#ffffff', letterSpacing: '0.01em' }}>
+            Autonomy Trust <span style={{ fontWeight: 400, color: '#C8A84C' }}>Labs</span>
+          </span>
         </a>
 
         {/* Desktop nav links */}
@@ -83,7 +83,7 @@ export default function Navbar() {
               onMouseEnter={e => (e.currentTarget.style.background = '#DFC170')}
               onMouseLeave={e => (e.currentTarget.style.background = '#C8A84C')}
             >
-              Request a Briefing →
+              Contact Now
             </a>
           </li>
         </ul>
@@ -128,7 +128,7 @@ export default function Navbar() {
           <a href="#contact"
             onClick={(e) => { e.preventDefault(); scrollTo('#contact'); }}
             style={{ display: 'inline-flex', justifyContent: 'center', padding: '10px 20px', background: '#C8A84C', color: '#06101F', fontWeight: 700, fontSize: '0.9rem', borderRadius: 3, textDecoration: 'none' }}>
-            Request a Briefing →
+            Contact Now
           </a>
         </div>
       )}

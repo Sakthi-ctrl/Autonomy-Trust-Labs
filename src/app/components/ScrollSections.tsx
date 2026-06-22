@@ -122,8 +122,8 @@ const NODES = [
     label: 'Vision Camera',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
-        <circle cx="12" cy="13" r="3"/>
+        <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" />
+        <circle cx="12" cy="13" r="3" />
       </svg>
     ),
     color: '#C8A84C'
@@ -211,12 +211,12 @@ export function Section3TrustLayer() {
         <div className="text-center mb-24 max-w-[850px] mx-auto relative">
           {/* Subtle text glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-blue/5 rounded-full blur-[60px] pointer-events-none" />
-          
-          <h2 className="font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70 leading-[1.05] mb-6 uppercase tracking-[0.03em] relative z-10" 
-              style={{ fontSize: 'clamp(3rem,6vw,4.5rem)', textShadow: '0 10px 40px rgba(255,255,255,0.1)' }}>
+
+          <h2 className="font-display text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/70 leading-[1.05] mb-6 uppercase tracking-[0.03em] relative z-10"
+            style={{ fontSize: 'clamp(3rem,6vw,4.5rem)', textShadow: '0 10px 40px rgba(255,255,255,0.1)' }}>
             ATL Platform
           </h2>
-          
+
           <p className="text-[1.15rem] leading-[1.8] font-light relative z-10" style={{ color: 'rgba(255,255,255,0.7)' }}>
             From Pilot to Trusted Deployment, our platform combines <span className="text-white font-medium">assurance software</span>, <span className="text-white font-medium">testing methodology</span>, <span className="text-white font-medium">risk intelligence</span>, and <span className="text-white font-medium">lifecycle monitoring</span>.
           </p>
@@ -306,7 +306,7 @@ export function Section3TrustLayer() {
               <div className="font-display text-white text-3xl leading-none mb-4 tracking-[0.06em] uppercase">Trust Labs</div>
               <div className="px-4 py-1.5 rounded-full bg-blue/10 border border-blue/20">
                 <div className="font-mono text-[0.6rem] tracking-[0.18em] uppercase text-white font-bold">
-                  Platform
+                  PLATFORM
                 </div>
               </div>
             </div>
@@ -438,77 +438,77 @@ export function Section3TrustLayer() {
 
 /* ── Section 5: Industries Grid ──────────────────────── */
 const INDUSTRIES = [
-  { 
-    label: 'Manufacturing', 
+  {
+    label: 'Manufacturing',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>
+        <path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Telecom', 
+  {
+    label: 'Telecom',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M4.9 19.1a10 10 0 0 1 0-14.2"/><path d="M8.4 15.6a5 5 0 0 1 0-7.2"/><circle cx="12" cy="12" r="2"/><path d="M15.6 15.6a5 5 0 0 0 0-7.2"/><path d="M19.1 19.1a10 10 0 0 0 0-14.2"/>
+        <path d="M4.9 19.1a10 10 0 0 1 0-14.2" /><path d="M8.4 15.6a5 5 0 0 1 0-7.2" /><circle cx="12" cy="12" r="2" /><path d="M15.6 15.6a5 5 0 0 0 0-7.2" /><path d="M19.1 19.1a10 10 0 0 0 0-14.2" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Logistics', 
+  {
+    label: 'Logistics',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h2"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>
+        <path d="M10 17h4V5H2v12h3" /><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h2" /><path d="M14 17h1" /><circle cx="7.5" cy="17.5" r="2.5" /><circle cx="17.5" cy="17.5" r="2.5" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Warehousing', 
+  {
+    label: 'Warehousing',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/>
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Healthcare', 
+  {
+    label: 'Healthcare',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Smart Cities', 
+  {
+    label: 'Smart Cities',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/>
+        <rect x="4" y="2" width="16" height="20" rx="2" ry="2" /><path d="M9 22v-4h6v4" /><path d="M8 6h.01" /><path d="M16 6h.01" /><path d="M12 6h.01" /><path d="M12 10h.01" /><path d="M12 14h.01" /><path d="M16 10h.01" /><path d="M16 14h.01" /><path d="M8 10h.01" /><path d="M8 14h.01" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Defense', 
+  {
+    label: 'Defense',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Energy', 
+  {
+    label: 'Energy',
     icon: (
       <svg className="w-4 h-4 text-gold animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
-    ) 
+    )
   },
-  { 
-    label: 'Infrastructure', 
+  {
+    label: 'Infrastructure',
     icon: (
       <svg className="w-4 h-4 text-blue animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 21h18M5 21V7l8-4v18M13 21V11l5-2v12"/><path d="M8 9h2M8 13h2M8 17h2M15 13h1M15 17h1"/>
+        <path d="M3 21h18M5 21V7l8-4v18M13 21V11l5-2v12" /><path d="M8 9h2M8 13h2M8 17h2M15 13h1M15 17h1" />
       </svg>
-    ) 
+    )
   },
 ];
 
