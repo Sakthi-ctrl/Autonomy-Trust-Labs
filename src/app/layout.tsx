@@ -22,6 +22,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Autonomy Trust Labs — Trust Infrastructure for the Autonomous World",
   description: "Helping organizations build, validate, deploy, and monitor trusted autonomous systems and Physical AI.",
+  icons: {
+    icon: '/Autonomy-Hummingbird.svg',
+  },
 };
 
 export default function RootLayout({
